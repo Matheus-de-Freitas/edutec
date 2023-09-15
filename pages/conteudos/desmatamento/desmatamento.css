@@ -1,0 +1,59 @@
+@import '../../../css-site/header.css';
+@import '../../../css-site/global.css';
+@import '../../../css-site/root.css';
+
+body {
+    background-color: var(--background-color-desmatamento);
+}
+
+.desmat {
+    padding-top: 10%;
+    padding-inline: 0;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.seta{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 3rem;
+    margin-top: -5%;
+}
+
+h1 {
+    color: #50CF59;
+    font-size: 3.1875rem;
+    margin-bottom: 1.25rem;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 5%;
+
+}
+
+.image img {
+    width: 23.75rem;
+    height: auto;
+    margin-right: 3.25rem;
+}
+
+.image p {
+    color: #000;
+    font-size: 1.125rem;
+    margin-right: 15%;
+    font-weight: 500;
+}
+
+.icone {
+    position: absolute;
+    align-items: center;
+}

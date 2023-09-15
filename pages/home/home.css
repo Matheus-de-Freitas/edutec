@@ -1,0 +1,792 @@
+@import '../../css-site/header.css';
+@import '../../css-site/global.css';
+@import '../../css-site/root.css';
+
+.home {
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100%;
+    /*se formos adicionar uma imagem como bg: background-image: url(), background-size:cover e background-position: center;*/
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    padding-inline: 5%;
+}
+
+.home > div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-img img{
+    position: left;
+}
+
+.home-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #0B4C18;
+    list-style: 1.1;
+    margin: 0 0 0.5rem;
+    margin-top: 5%;
+}
+  
+  
+.home-text p {
+    color: #000;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+    max-width: 50rem;
+}
+
+.home .redes-sociais-inicio{
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+}
+
+.redes-sociais-inicio{
+    background: #fff;
+}
+
+.redes-sociais-inicio img {
+    width: 4.375rem;
+}
+
+.contact-icons i {
+    height: 2.813rem;
+    width: 2.813rem;
+    background-color: #31762D;
+    color: #fff;
+    font-size: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.contact-icons i:hover {
+    background-color: #fff;
+    color:#31762D ;
+    border: solid 1px #31762d;
+}
+
+/* .quiz{
+    display: flex;
+    border: 1px solid red;
+    padding: 0;
+} */
+
+.quiz .redes-sociais-inicio {
+    flex-direction: column;
+    position: absolute;
+    left: -20rem;
+}
+
+.conteudo{
+    height: 48rem;
+}
+
+.conteudo > div{
+    position: relative;
+
+}
+
+.quiz p {
+    color: var(--text-color);
+}
+
+.inicial-quiz-desmatamento h2{
+    color:var(--h1-desmatamento)
+}
+
+#esquerda,
+#direita{
+    cursor: pointer;
+}
+
+.inicial-quiz-desmatamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+}
+
+.inicial-quiz-desmatamento .conteudo{
+    border-radius: 20px;
+    max-width: 60rem;
+    background: var(--background-quiz-desmatamento-estufa);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.75rem;
+}
+
+#proxima-pagina{
+    display: none;
+}
+
+.proxima-pagina{
+    display: none;
+}
+
+.inicial-quiz-queimadas h2{
+    color:var(--h1-queimadas)
+}
+
+.inicial-quiz-queimadas{
+    border-radius: 20px;
+    max-width: 60rem;
+    margin-inline: auto;
+}
+
+.inicial-quiz-queimadas .conteudo div img{
+    margin-top: -3%;
+}
+
+#comecar-queimadas {
+    display: flex;
+    margin-top: -3%;
+    cursor: pointer;
+}
+
+.inicial-quiz-queimadas .conteudo{
+    border-radius: 20px;
+    max-width: 60rem;
+    background: var(--background-quiz-queimadas);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.75rem;
+}
+
+
+.inicial-quiz-extincao,
+.inicial-quiz-estufa,
+.inicial-quiz-aquecimento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+    position: relative;
+}
+
+
+.inicial-quiz-extincao #esquerda,
+.inicial-quiz-extincao #direita{
+    margin-top: -3%;
+}
+
+.inicial-quiz-extincao h2{
+    color: var(--h1-extincao);
+}
+
+.inicial-quiz-extincao .conteudo,
+.inicial-quiz-estufa .conteudo,
+.inicial-quiz-aquecimento .conteudo{
+    border-radius: 20px;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.75rem;
+}
+
+.inicial-quiz-extincao .conteudo{
+    background: var(--background-button-conteudo-extincao);
+}
+
+.inicial-quiz-extincao h2{
+    color: var(--h1-extincao);
+}
+
+#comecar-extincao {
+    display: flex;
+    margin-top: -3%;
+    cursor: pointer;
+}
+
+.inicial-quiz-estufa h2{
+    color: var(--h1-estufa);
+}
+
+.inicial-quiz-estufa .conteudo{
+    background: var(--background-quiz-desmatamento-estufa)
+}
+
+.inicial-quiz-estufa #esquerda,
+.inicial-quiz-estufa #direita{
+    margin-top: -7%;
+}
+
+#comecar-estufa{
+    display: flex;
+    margin-top: -6.6%;
+    cursor: pointer;
+}
+
+.inicial-quiz-aquecimento h2{
+    color: var(--h1-aquecimento-global);
+}
+
+.inicial-quiz-aquecimento .conteudo{
+    background: var(--background-button-conteudo-aquecimento);
+}
+
+.inicial-quiz-aquecimento #esquerda,
+.inicial-quiz-aquecimento #direita{
+    margin-top: -3%;
+}
+
+
+#comecar-aquecimento{
+    display: flex;
+    margin-top: -3%;
+    cursor: pointer;
+}
+
+.conteudo div {
+    display: flex;
+    align-items: center;
+    gap: 4.875rem;
+    margin-bottom: 7.25rem;
+    padding-inline: 3.125rem;
+}
+
+.conteudo h2{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.conteudo p {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+#logo-desmatamento {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.34rem;
+    margin-bottom: 3.01rem;
+    width: 5.1rem;
+}
+
+#comecar-desmatamento {
+    display: flex;
+    margin-top: 0.5%;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+}
+
+.inicial-quiz-queimadas .redes-sociais{
+    position: fixed;
+}
+
+.redes-sociais img {
+    flex-direction: column;
+}
+
+.contact {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.contact-text h4{
+    color: #000;
+    margin: 1.125rem 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.contact-text h2 {
+    font-size: 3rem;
+    line-height: 1;
+    color: #45AC5F;
+}
+
+.contact-text p {
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin-bottom: 1.875rem;
+}
+
+.list {
+    margin-bottom: 0.75rem;
+}
+
+.list li{
+    margin-bottom: 0.75rem;
+}
+
+.list li a {
+    display: block;
+    color: #333;
+    font-size: 1.294rem;
+    transform: all .45s ease;
+}
+   
+
+.list li a:hover {
+    color: #ccc;
+    transform: translateX(5px);
+}
+
+.redes-sociais-contato{
+    display: flex;
+    gap: 3.188rem;
+}
+
+.redes-sociais-contato img{
+    flex-direction: column;
+    width: 4.125rem;
+    margin-top: 1.5rem;
+}
+
+.contact-form form input, form textarea{
+    width: 100%;
+    padding: 0.875rem;
+    background: #f2f2f2;
+    color: #929292;
+    border: none;
+    outline: none;
+    font-size: 0.938rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.625rem;
+} 
+
+.contact-form textarea {
+    resize: none;
+    height: 15rem;
+}
+
+form button {
+    display: inline-block;
+    font-size: 1rem;
+    background-color: #31762D;
+    color: #fff;
+    width: 11rem;
+    transition: all .45s ease;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.error {
+    color: #BD1B1B;
+    margin-left: 3rem;
+}
+.success {
+    color: #50CF59;
+    margin-left: 3rem;
+    font-size: 2rem;
+}
+
+
+.contact-form .submit:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.conteudos-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #CCCCCC;
+    margin-bottom: -20%;
+
+}
+
+.contact-icons i {
+    height: 45px;
+    width: 45px;
+    background-color: #31762D;
+    color: #fff;
+    font-size: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+
+.contact-icons i:hover {
+    background-color: #fff;
+    color:#31762D ;
+    border: solid 1px #31762d;
+}
+
+.contact-text span{
+    color: #A8CA32;
+}
+
+.conteudos-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #CCCCCC;
+    margin-bottom: -20%;
+
+}
+  
+.conteudos-text h2 {
+    font-size: 1.294rem;
+}
+  
+  
+.conteudos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1.5%;
+}
+  
+  /* RAM = PX/16 */
+  
+.amatec-conteudo h1 {
+    font-size: 3.7rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.75rem;
+  
+}
+  
+  
+.verd {
+    color: #A8CA32;
+}
+  
+.verd-escuro {
+    color: #062C0E;
+}
+  
+.buttons-c {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    width: 125%;
+}
+
+.button-desmatamento a,
+.button-queimadas a,
+.button-extincao a,
+.button-estufa a,
+.button-aquecimento a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--background-button-conteudo);
+    width: 21rem;
+    padding: 3rem 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button-desmatamento p,
+.button-queimadas p,
+.button-extincao p,
+.button-estufa p,
+.button-aquecimento p{
+    color:#fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.button-desmatamento img,
+.button-queimadas img,
+.button-extincao img,
+.button-estufa img,
+.button-aquecimento img {
+    width: 5rem;
+}
+
+.button-desmatamento a:hover{
+    background: var(--background-button-conteudo-desmatamento);
+    transition: 250ms;
+}
+
+.button-queimadas a:hover{
+    background: var(--background-button-conteudo-queimadas);
+    transition: 250ms;
+}
+
+.button-extincao a:hover{
+    background: var(--background-button-conteudo-extincao);
+    transition: 250ms;
+}
+
+.button-estufa a:hover{
+    background: var(--background-quiz-desmatamento-estufa);
+    transition: 250ms;
+}
+
+.button-aquecimento a:hover{
+    background:var(--background-button-conteudo-aquecimento);
+    transition: 250ms;
+}
+
+.segundo{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.primeiro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.box {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    width: 18.75rem;
+    height: 28.125rem;
+    transition: all 0.3s ease;
+}
+
+.box h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 0.938rem;
+    margin-left: 1.25rem;
+}
+
+.box p {
+    color: #0F0E0F;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 1.563;
+    margin-left: 1.25rem;
+    width: 13.75rem;
+    height: 32.5rem;
+}
+
+.services-content{
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.s-icons i {
+    font-size: 2rem;
+    margin-top: 1.25rem;
+    color: #A8CA32;
+    margin-left: 1.25rem;
+  
+}
+
+.box:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.main-text h1 {
+    font-size: 3rem;
+}
+
+.main-text span{
+    color: #A8CA32;
+}
+
+.main-text p {
+    color: #ccc;
+}
+.main-text{
+    text-align: center;
+}
+
+.btn-lr{
+    position: absolute;
+    color: #1F7D31;
+    padding: 0.625rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.7rem;
+    margin-top: -5px;
+}
+
+.btn-lr:hover{
+    transform: scale(1.5);
+}
+
+
+#back {
+    top: 50%;
+    left: 10%;
+}
+
+#next {
+    top: 50%;
+    right: 10%;
+}
+
+.integrants{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+}
+
+.integrants-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.integrants-text {
+    text-align: center;
+}
+
+.integrants-text h1 {
+    font-size: 3rem;
+}
+
+.integrants-text span{
+    color: #A8CA32;
+}
+.integrants-text p {
+    color: #ccc;
+}
+
+.seta:hover{
+    cursor: pointer;
+}
+
+.card /*colocar as definicios do box - ele separou o card em dois, parte da img e parte do texto*/{
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    width: 18.75rem;
+    height: 28.125rem;
+    transition: all 0.3s ease;
+}
+.card-image {
+    position: relative;
+    height: 9.375rem;
+    width: 9.375rem;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 0.188rem;
+    margin-top: 0.938rem;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0F7668;
+}
+
+.card-image .card-img2 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #A8CA32;
+}
+
+.image-content, 
+.card-content {
+    padding: 0.625rem 0.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-content {
+    row-gap: 5px;
+}
+
+.name {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #000;
+    margin-top: 0.625rem;
+    font-weight: bold;
+}
+
+
+.description {
+    font-size: 1.125rem;
+    color: #333;
+    text-align: center;
+    margin-top: 0.625rem;
+}
+
+.description strong {
+    color: #000;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.sobre1,
+.integrantes1,
+.integrantes2{
+    padding: 0;
+}
+
+.footer {
+    padding: 1.25rem 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: #0F7668;
+  }
+  
+  .last-text p{
+    color: #ccc;
+    font-size: 0.875rem;
+    margin-left: -15%;
+  }
+  
+  .top i {
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+    font-size: 0.938rem;
+    color: #C6FFC1;
+    background: #31762D;
+  }

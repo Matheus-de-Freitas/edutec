@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="shortcut icon" href="../../images/logos/favicon.ico" type="image/x-icon">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Amatec</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">A<span>m</span>a<span>t</span>e<span>c</span></a>
+        <ul class="navlist">
+            <li><a href="#home" class="active botao-home">home</a></li>
+            <li><a href="#quiz" class="botao-quiz">Quiz</a></li>
+            <li><a href="#contact" class="botao-contact">Contato</a></li>
+            <li><a href="#conteudos" class="botao-conteudos">Conteúdos</a></li>
+            <li><a href="#sobre" class="botao-sobre">Sobre</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon">
+        </div>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+
+            <div>
+                <div class="home-text">
+                    <h1>“A natureza é o único livro <br> que oferece um conteúdo<br> valioso em todas as suas <br>folhas.”</h1>
+                    <p>Qual será nossa escolha? Degradação recuperação? 
+                        Escassez ou fartura? Compaixão ou cobiça? Amor ou medo? 
+                        Tempos melhores ou piores?</p>
+                        
+                </div>
+    
+                <div class="home-img">
+                    <img src="../../images/ilustrações/ilustração home.svg" alt="">
+                </div>
+            </div>
+            
+            <div class="redes-sociais-inicio">
+                    <img src="../../images/botões/redes sociais/verde/ícone do facebook (verde).svg"
+                        alt="Logo facebook (desmatamento)">
+                    <img src="../../images/botões/redes sociais/verde/ícone do instagram (verde).svg"
+                        alt="Logo instagram (desmatamento)">
+                    <img src="../../images/botões/redes sociais/verde/ícone do twiter(verde).svg"
+                        alt="Logo twitter (desmatamento)">
+            </div>
+
+        </section>
+
+        <section id="quiz" class="quiz" onscroll="marcarPosicao('quiz')">
+            <div class="inicial-quiz-desmatamento">
+
+                <div class="conteudo">
+                    <h2>Desmatamento</h2>
+
+                    <img src="../../images/logos/logos preto e branco/logo desmatamento-quiz(pag.inicial).svg"
+                        id='logo-desmatamento' alt="Símbolo desmatamento">
+                    <div>
+                        
+                        <img id='esquerda'
+                            src="../../images/setas/seta seleção de quiz/desmatamento/seta esquerda (desmatamento).svg"
+                            alt="Seta para esquerda" onclick="mudarPagina('esquerda' , 'aquecimento')">
+                        <p>É um processo de retirada da vegetação de um local. Desflorestamento ou desmatamento é o
+                            processo de destruição das florestas através da ação do homem. Ocorre, geralmente, para a
+                            exploração de madeira, abertura de áreas para a agricultura ou pastagem para o gado.</p>
+
+                        <img id='direita'
+                            src="../../images/setas/seta seleção de quiz/desmatamento/seta direita (desmatamento).svg"
+                            alt="Seta para direita" onclick="mudarPagina('direita','queimadas')">
+                    </div>
+                    <a href="../quiz/desmatamento/quiz-desmatamento.html">
+                        <img src="../../images/botões/botões quiz/botão começar/botão começar(desmatamento).svg"
+                            alt="Botão de começar" id="comecar-desmatamento">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="inicial-quiz-queimadas" id = 'proxima-pagina'>
+
+                <div class="conteudo">
+                    <h2>Queimadas</h2>
+
+                    <img src="../../images/logos/logos preto e branco/logo queimada-quiz(pag.inicial).svg"
+                        id='logo-desmatamento' alt="Símbolo queimadas">
+                    <div>
+                        <img id='esquerda'
+                            src="../../images/setas/seta seleção de quiz/queimadas/seta esquerda (queimadas).svg"
+                            alt="Seta para esquerda" onclick="mudarPagina('esquerda' , 'desmatamento')">
+                        <p>Nos últimos anos foi possível observar um crescimento no número de focos de incêndio no Pantanal, o menor bioma em extensão territorial no Brasil, localizado no Centro-Oeste do país e dividido entre os estados do Mato Grosso e Mato Grosso do Sul. Vale lembrar que a planície pantaneira ainda se estende aos países Bolívia e Paraguai.</p>
+
+                        <img id='direita'
+                            src="../../images/setas/seta seleção de quiz/queimadas/seta direita (queimadas).svg"
+                            alt="Seta para direita" onclick="mudarPagina('direita','extincao')">
+                    </div>
+                    <img src="../../images/botões/botões quiz/botão começar/botão começar( queimadas).svg"
+                        alt="Botão de começar" id="comecar-queimadas">
+                </div>
+
+            </div>
+
+            <div class="inicial-quiz-extincao" id = 'proxima-pagina'>
+
+                <div class="conteudo">
+                    <h2>Processo de Extinção</h2>
+
+                    <img src="../../images/logos/logos preto e branco/logo extincao-quiz(pag.inicial).svg"
+                        id='logo-desmatamento' alt="Símbolo queimadas">
+                    <div>
+                        <img id='esquerda'
+                        src="../../images/setas/seta seleção de quiz/extinção/seta esquerda (processo de extinção).svg"
+                            alt="Seta para esquerda" onclick="mudarPagina('esquerda' , 'queimadas')">
+                        <p>A extinção é um processo natural, no qual espécies de animais desaparecem de um determinado ecossistema. Este evento, quando acontece por meio da própria natureza, é muito lento, milhares e até milhões de anos são necessários para a extinção de animais por catástrofes naturais ou o surgimento de competidores mais eficientes. </p>
+
+                        <img id='direita'
+                        src="../../images/setas/seta seleção de quiz/extinção/seta direita (processo de extinção).svg"
+                            alt="Seta para direita" onclick="mudarPagina('direita', 'estufa')">
+                    </div>
+                    <img src="../../images/botões/botões quiz/botão começar/botão começar( extinção).svg"
+                        alt="Botão de começar" id="comecar-extincao">
+                </div>
+            </div>
+
+            <div class="inicial-quiz-estufa" id = 'proxima-pagina'>
+
+                <div class="conteudo">
+                    <h2>Efeito Estufa</h2>
+
+                    <img src="../../images/logos/logos preto e branco/logo efeito estufa-quiz(pag.inicial).svg"
+                        id='logo-desmatamento' alt="Símbolo queimadas">
+                    <div>
+                        <img id='esquerda'
+                        src="../../images/setas/seta seleção de quiz/efeito estufa/seta esquerda (efeito estufa).svg"
+                            alt="Seta para esquerda" onclick="mudarPagina('esquerda' , 'extincao')">
+                        <p>O efeito estufa é um fenômeno climático e atmosférico responsável pela retenção do calor proveniente dos raios solares, ocasionando a manutenção das temperaturas. Se ele não existisse, os dias na Terra seriam bem mais frios. Há, no entanto, certa polêmica envolvendo o processo de intensificação do efeito estufa em função da emissão de gases poluentes na atmosfera.</p>
+
+                        <img id='direita'
+                        src="../../images/setas/seta seleção de quiz/efeito estufa/seta direita (efeito estufa).svg"
+                            alt="Seta para direita" onclick="mudarPagina('direita', 'aquecimento')">
+                    </div>
+                    <img src="../../images/botões/botões quiz/botão começar/botão começar( efeito estufa).svg"
+                        alt="Botão de começar" id="comecar-estufa">
+                </div>
+            </div>
+
+        <div class="inicial-quiz-aquecimento" id="proxima-pagina">
+            <div class="conteudo">
+                <h2>Aquecimento Global</h2>
+
+                <img src="../../images/logos/logos preto e branco/logo aq.global-quiz(pag.inicial).svg"
+                    id='logo-desmatamento' alt="Símbolo queimadas">
+                <div>
+                    <img id='esquerda'
+                    src="../../images/setas/seta seleção de quiz/aquecimento global/seta esquerda (aquecimento global).svg"
+                        alt="Seta para esquerda" onclick="mudarPagina('esquerda' , 'estufa')">
+                    <p>Refere-se ao aumento anormal da temperatura média do planeta registrado nas últimas décadas. Esse fenômeno é associado principalmente às ações antrópicas. O aquecimento global é um fenômeno que tem sido registrado nas últimas décadas e evidencia um aumento anormal da temperatura média da Terra..</p>
+
+                    <img id='direita'
+                    src="../../images/setas/seta seleção de quiz/aquecimento global/seta direita (aquecimento global).svg"
+                        alt="Seta para direita" onclick="mudarPagina('direita', 'desmatamento')">
+                </div>
+                <img src="../../images/botões/botões quiz/botão começar/botão começar(azul- aquecimento global).svg"
+                    alt="Botão de começar" id="comecar-aquecimento">
+            </div>
+        </div>
+
+
+
+        </section>
+
+        <section class="contact" id="contact" >
+            <div class="contact-text">
+                <h2>Contate-<span>nos!</span></h2>
+                <h4>Vamos te ouvir</h4>
+                <p>Estamos aptos para ouvir a sua opinião sobre o
+                    nosso trabalho, pontos a melhorar e muito mais.</p>
+    
+                <div class="list">
+                    <li><a href="#">projectoamatec@gmail.com</a></li>
+                    <li><a href="#">Segue a gente! Compartilhe!</a></li>
+                </div>
+    
+                <div class="redes-sociais-contato">
+                    <img src="../../images/botões/redes sociais/verde/ícone do facebook (verde).svg"
+                        alt="Logo facebook (desmatamento)">
+                    <img src="../../images/botões/redes sociais/verde/ícone do instagram (verde).svg"
+                        alt="Logo instagram (desmatamento)">
+                    <img src="../../images/botões/redes sociais/verde/ícone do twiter(verde).svg"
+                        alt="Logo twitter (desmatamento)">
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <input type="name" placeholder="Insira seu nome:" required>
+                    <input type="email" placeholder="Insira seu e-mail:" required>
+                    <textarea name="" id="" cols="35" rows="10" placeholder="Insira sua mensagem:" required></textarea>
+                    <button id="submit"> Enviar Mensagem </button>
+                </form>
+            </div>
+           
+        </section>
+
+        <!---conteudos-->
+        <section id='conteudos'class="conteudos-text">
+            <h2>Conteúdos</h2>
+        </section>
+
+        <section class="conteudos">
+            <div class="amatec-conteudo">
+                <h1><span class="verd-escuro">A</span><span class="verd">m</span><span class="verd-escuro">a</span><span class="verd">t</span><span class="verd-escuro">e</span><span class="verd">c</span></h1>
+            </div>
+            
+            <div class="buttons-c">
+                
+                <div class="button-desmatamento">
+                        <a href="../conteudos/desmatamento/desmatamento.html">
+                            <img src="../../images/logos/logos preto e branco/logo desmatamento-quiz(pag.inicial).svg" alt="">
+                            <p>Desmatamento</p>
+                        </a>
+                    </div>
+                
+                    <div class="button-queimadas">
+                        <a href="">
+                            <img src="../../images/logos/logos preto e branco/logo queimada-quiz(pag.inicial).svg" alt="">
+                            <p>Queimadas</p>
+                        </a>
+                    </div>
+
+                    <div class="button-extincao">
+                        <a href="">
+                            <img src="../../images/logos/logos preto e branco/logo extincao-quiz(pag.inicial).svg" alt="">
+                            <p>Extinção</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="segundo">
+                    <div class="button-estufa">
+                        <a href="">
+                            <img src="../../images/logos/logos preto e branco/logo efeito estufa-quiz(pag.inicial).svg" alt="">
+                            <p>Efeito Estuda</p>
+                        </a>
+                    </div>
+
+                    <div class="button-aquecimento">
+                        <a href="">
+                            <img src="../../images/logos/logos preto e branco/logo aq.global-quiz(pag.inicial).svg" alt="">
+                            <p>Aquecimento Global</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="sobre1">
+            <section class="services" id="sobre">
+                <div class="main-text">
+                    <p>Sobre a gente.</p>
+                    <h1>A<span>m</span>a<span>t</span>e<span></span>c</h1>
+                </div>
+        
+                <div class="services-content">
+                    <div class="caixas">
+
+                        <div class="seta">
+                            <img src="../../images/setas/seta seleção de quiz/desmatamento/seta esquerda (desmatamento).svg" alt="" onclick="mudarConteudo('esquerda', 'integrantes2')">
+                        </div>
+                        
+                        <div class="box">
+                            <div class="s-icons">
+                                <i class='bx bxs-leaf' ></i>
+                            </div>
+                            <h3>Amatec</h3> 
+                            <p>O Amatec é voltado à praticidade no estudo de jovens que buscam informações fáceis e objetivas. Com questões de vestibulares  nós trazemos um site voltado especificamente aos problemas ambientais que enfrentamos.</p>
+                        </div>
+                            
+                        <div class="box">
+                            <div class="s-icons">
+                                <i class='bx bx-book' ></i>
+                            </div>
+                            <h3>Vestibulares</h3> 
+                            <p>Somos uma plataforma voltada para auxiliar estudantes no vestibular. Buscamos proporcionar métodos de estudo dinâmicos e até mesmo divertidos, visando tornar essa jornada menos tensa e exaustiva para os estudantes. </p>
+                                    
+                        </div>
+
+                        <div class="box">
+                            <div class="s-icons">
+                                <i class='bx bx-world' ></i>
+                            </div>
+                            <h3>Mundo, um lugar melhor!</h3> 
+                            <p>Para criar um mundo melhor, é crucial que nos comprometamos com a preservação da natureza e adotemos práticas sustentáveis em todas as áreas da vida. Isso envolve a conservação de ecossistemas, e o uso responsável dos recursos naturais.</p>
+                                    
+                        </div>
+
+                        <div class="seta">
+                            <img src="../../images/setas/seta seleção de quiz/desmatamento/seta direita (desmatamento).svg" alt="" onclick="mudarConteudo('direita','integrantes1')">
+                        </div>
+                            
+                    </div>
+                </div>
+            </section>    
+    
+        </section>
+
+        <section id="proxima-pagina" class="integrantes1">
+            <section class="integrants" id="sobre">
+                <div class="integrants-text">
+                    <p>TEAM</p>
+                    <h1>A<span>m</span>a<span>t</span>e<span></span>c</h1>
+                </div>
+                
+                <div class="integrants-content">
+                    
+                    <div class="seta">
+                        <img src="../../images/setas/seta seleção de quiz/desmatamento/seta esquerda (desmatamento).svg" alt="" onclick="mudarConteudo('esquerda','sobre')">
+                    </div>
+
+                    <div class="card-wrapper" id="integrantes">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"> </span>
+        
+                                <div class="card-image">
+                                    <img src="../../images/imagens/fotos integrantes/Gabriella.svg" alt="" class="card-img2">
+                                </div>
+                            </div>
+        
+        
+                            <div class="card-content">
+                                <h2 class="name">Gabriella Victória</h2>
+                                <p class="description"><strong>Idade:</strong> 16 anos</p>
+                                <p class="description"><strong>Formação:</strong> Unasp - Técnico de Informática</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"> </span>
+        
+                                <div class="card-image">
+                                    <img src="../../images/imagens/fotos integrantes/Gui.svg" alt="" class="card-img">
+                                </div>
+                            </div>
+        
+        
+                            <div class="card-content">
+                                <h2 class="name">Guilherme Oliveira</h2>
+                                <p class="description"><strong>Idade:</strong> 16 anos</p>
+                                <p class="description"><strong>Formação:</strong> Unasp - Técnico de Informática</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"> </span>
+        
+                                <div class="card-image">
+                                    <img src="../../images/imagens/fotos integrantes/Matheus.svg" alt="" class="card-img2">
+                                </div>
+                            </div>
+        
+        
+                            <div class="card-content">
+                                <h2 class="name">Matheus de Freitas</h2>
+                                <p class="description"><strong>Idade:</strong> 17 anos</p>
+                                <p class="description"><strong>Formação:</strong> Unasp - Técnico de Informática</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="seta">
+                        <img src="../../images/setas/seta seleção de quiz/desmatamento/seta direita (desmatamento).svg" alt="" onclick="mudarConteudo('direita' ,'integrantes2')">
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <section id="proxima-pagina" class="integrantes2">
+            <section class="integrants" id="sobre">
+                <div class="integrants-text">
+                    <p>TEAM</p>
+                    <h1>A<span>m</span>a<span>t</span>e<span></span>c</h1>
+                </div>
+                    
+                <div class="integrants-content">
+                        
+                    <div class="seta">
+                        <img src="../../images/setas/seta seleção de quiz/desmatamento/seta esquerda (desmatamento).svg" onclick="mudarConteudo('esquerda' , 'integrantes1')" alt="">
+                    </div>
+    
+                    <div class="card-wrapper" id="integrantes">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"> </span>
+            
+                                <div class="card-image">
+                                    <img src="../../images/imagens/fotos integrantes/Kauã Ramos.svg" alt="" class="card-img2">
+                                </div>
+                            </div>
+            
+            
+                            <div class="card-content">
+                                <h2 class="name">Kauã Ramos</h2>
+                                <p class="description"><strong>Idade:</strong> 16 anos</p>
+                                <p class="description"><strong>Formação:</strong> Unasp - Técnico de Informática</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"> </span>
+            
+                                <div class="card-image">
+                                    <img src="../../images/imagens/fotos integrantes/Julia.svg" alt="" class="card-img">
+                                </div>
+                            </div>
+            
+            
+                            <div class="card-content">
+                                <h2 class="name">Julia Souza</h2>
+                                <p class="description"><strong>Idade:</strong> 16 anos</p>
+                                <p class="description"><strong>Formação:</strong> Unasp - Técnico de Informática</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="image-content">
+                                <span class="overlay"> </span>
+            
+                                <div class="card-image">
+                                    <img src="../../images/imagens/fotos integrantes/João Martins.svg" alt="" class="card-img2">
+                                </div>
+                            </div>
+            
+            
+                            <div class="card-content">
+                                <h2 class="name">João Victor Martins</h2>
+                                <p class="description"><strong>Idade:</strong> 16 anos</p>
+                                <p class="description"><strong>Formação:</strong> Unasp - Técnico de Informática</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="seta">
+                        <img src="../../images/setas/seta seleção de quiz/desmatamento/seta direita (desmatamento).svg" alt="" onclick="mudarConteudo('direita' , 'sobre')">
+                    </div>
+    
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="last-text">
+                <p> &copy Copyright 2022/2023 por Equipe Amatec.</p>
+            </div>
+    
+            <div class="top">
+                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+    
+        </section>
+    </footer>

@@ -1,0 +1,37 @@
+@import '../../../css-site/header.css';
+@import '../../../css-site/global.css';
+@import '../../../css-site/root.css';
+
+h1 {
+    color: #5077CF;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.global{
+    display: flex;
+    justify-content: center;
+    gap: 11rem;
+    
+}
+
+ .polar img {
+    display: flex;
+    justify-content: left;
+    margin-left: 7rem;
+ }
+
+.globo {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.global img {
+    width: 65%;
+}
+
+.globo p {
+    display: flex;
+    justify-content: left ;
+
+}

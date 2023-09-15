@@ -1,0 +1,305 @@
+@import '../../../css-site/header.css';
+@import '../../../css-site/global.css';
+@import '../../../css-site/root.css';
+
+/*quiz design*/
+
+
+.hide {
+    display: none;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+.Quizbox {
+    background: url(../../../images/ilustrações/ilustração-quiz-desmatamento.svg)  right bottom no-repeat fixed;
+    background-position: fixed;
+    background-size: 100vh;
+    padding: 0;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+.quiz {
+    display: flex;
+    margin-left: 5rem;
+}
+
+.tittle-quiz{
+    margin-top: 3.5rem;;
+}
+
+.quiz-left {
+    max-width: 47rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quiz-left h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: #083912;
+    text-align: center;
+} 
+
+.quiz-box {
+    background-color: #D8ECD6;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 2rem;
+    font-weight: 600;
+    text-align: justify;
+}
+
+
+.button {
+    background-color: #fff;
+    color: #000;
+    display: block;
+    padding: 10px;
+    width: 42rem;
+    border-radius: 5px;
+    margin: 0.625rem;
+    text-align: left;
+    font-size: 1rem;
+    border: none;
+    font-weight: 500;
+}
+
+.answers-container {
+    padding-top: 3rem;
+}
+
+.answer-quiz{
+    display: flex;
+    justify-content: center;
+}
+
+.answer-quiz button{
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    background-color: #0E8024;
+    border-radius: 5px;
+    margin-top: 3rem;
+    width: 25rem;
+    height: 3.75rem;
+    font-weight: 600;
+    
+}
+
+.quiz-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10rem;
+    top: 50%;
+}
+
+.number-grid {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px;
+}
+
+.questions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 50vh;
+    right: 6.5vh;
+    height: 10.625rem;
+    width: 18.125rem;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 14px 26px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 14px 26px -11px rgba(0,0,0,0.75);
+    box-shadow: -1px 14px 26px -11px rgba(0,0,0,0.75);
+
+}
+
+.numbers {
+    background-color: #ccc;
+    height: 30px;
+    width: 45px;
+    margin-bottom: .7rem;
+    margin-left: .3rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding-left: 5px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.answer-grid p {
+    height: 30px;
+    width: 20px;
+    padding-top: 3px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+
+
+.justify-question {
+    background-color: #B7D2B5;
+    border-radius: 8px;
+    width: 30rem;
+    justify-content: flex-end;
+    color: #083912;
+    transition: all .5s ease;
+
+}
+
+.justifyq-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #0B4C18;
+    height: 70px;
+    border-radius: 8px;
+}
+
+.lineq {
+    margin-top: 10px;
+    width: 150px;
+    border-bottom: 3px solid #82C27C;
+    cursor: pointer;
+}
+
+#lineqBottom {
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+
+.justify-question h3 {
+    padding: 20px;
+    font-size: 1.4rem;
+}
+
+.justify-question p {
+    padding-bottom: 2rem;
+}
+
+.justify-text {
+    padding: 0 20px ;
+    font-weight: 500;
+}
+
+
+.correct-questions{
+    background-color: #50CF59;
+}
+  
+
+/* end quiz design*/
+
+
+.Quiz-end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../../../images/logos/Logo\ Desmatamento.svg)  right  no-repeat;
+    background-color: #f1f1f1;
+
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.end-content {
+    background-color: #fff;
+    width: 450px;
+    border-radius: 5px;
+}
+
+.end-answers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 30px;
+}
+
+.end-answers a {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.correct {
+    color: #fff;
+    background-color: #50CF59;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+  
+.incorrect {
+    color: #fff;
+    background-color: #BD1B1B;
+    transition: all .5s ease;
+}
+
+
+
+.text-end {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    color: #172B26;
+    font-size: 1.5rem;
+}
+
+.end-buttons {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.end-buttons button {
+    margin: 20px;
+    height: 65px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background-color: #B9D7BE;
+}
+
+#out {
+    border: 3px solid #B9D7BE;
+    background-color: transparent;
+    
+}
+
+.hide {
+    display: none;
+}

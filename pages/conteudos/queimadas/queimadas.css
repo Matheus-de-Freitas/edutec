@@ -1,0 +1,43 @@
+@import '../../../css-site/global.css';
+@import '../../../css-site/header.css';
+@import '../../../css-site/root.css';
+
+body{
+    background: var(--background-color-queimadas);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 0;
+    padding-bottom: 5%;
+    
+}
+
+.titulo h1 {
+    color: var(--h1-queimadas);
+    font-size: 3.1875rem;
+    margin-bottom: 1.25rem;
+}
+
+.seta{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-right: 3rem;
+    margin-top: -5%;
+
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 2.75rem;
+}
+
+.texto   {
+    width: 80%;
+    margin-top: 2rem;
+}
