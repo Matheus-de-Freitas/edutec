@@ -54,7 +54,6 @@ body{
 .caixa-quiz {
     background-color: var(--background-conteudo-quiz-estufa);
     display: flex;
-    align-items: left;
     flex-direction: column;
     border-radius: 10px;
     padding: 2rem;
