@@ -82,13 +82,13 @@ function mostrarProximaQuestao(){
 
 
 function selecionarResposta(evento){
-  const answerClicked = evento.target
+  const respostaClicada = evento.target
 
-  if(answerClicked.dataset.correto){
+  if(respostaClicada.dataset.correto){
     totalCorreto++
   }
 
-  if (answerClicked.dataset.correto){
+  if (respostaClicada.dataset.correto){
     gradeQuestoes.innerHTML += `
       <div class="numeros">${indexQuestaoAtual + 1})
         <div class="grade-respostas"> 
@@ -142,8 +142,8 @@ function fimJogo(){
   const totalQuestoes = 10
   const totalIncorreto = totalQuestoes - totalCorreto
   respostaFimCorreta.innerHTML = `
-  <a href="#" class="correto id="fim-correct">Respostas certas: <span>${totalCorreto}</span></a>`
-  respostaFimIncorreta.innerHTML = `<a href="#" class="incorreto id="fim-incorrect">Respostas erradas: <span>${totalIncorreto}</span></a>`
+  <a href="#" class="correto id="fim-correto">Respostas certas: <span>${totalCorreto}</span></a>`
+  respostaFimIncorreta.innerHTML = `<a href="#" class="incorreto id="fim-incorreto">Respostas erradas: <span>${totalIncorreto}</span></a>`
 
 }
 
@@ -154,17 +154,6 @@ function fimJogo(){
 
 // as questoes do quiz:
 const questao = [
-
-  {
-    Questao: ' "Assinale a alternativa que NÃO apresenta uma causa do desmatamento:" ' ,
-    respostas: [
-      { texto: "A) Exploração de madeira.", correto: false },
-      { texto: "B) Produção de carvão.", correto: false },
-      { texto: "C) Conservação dos rios.", correto: true }
-    ],
-    justificativa: "C) O desmatamento possui várias causas, relacionadas com questões econômicas, políticas e sociais, mas não está vinculado à conservação dos cursos de água.",
-    letra: 'C',
-  },
   {
     Questao: "Indique um fenômeno geomorfológico que é diretamente aumentado pelo desmatamento:",
     respostas: [
@@ -175,6 +164,23 @@ const questao = [
     justificativa: "B) A erosão é diretamente aumentada pelo desmatamento, visto que o solo sem vegetação natural fica muito mais suscetível aos processos erosivos.",
     letra: 'B'
   },
+
+  {
+  Questao: '(Enem 2019) "O efeito estufa não é fenômeno recente e, muito menos, naturalmente maléfico. Alguns dos gases que o provocam funcionam como uma capa protetora que impede a dispersão total do calor e garante o equilíbrio da temperatura na Terra. Cientistas americanos da Universidade da Virgínia alegam ter descoberto um dos primeiros registros da ação humana sobre o efeito estufa. Há oito mil anos, houve uma súbita elevação da quantidade de CO2 na atmosfera terrestre. Nesse mesmo período, agricultores da Europa e da China já dominavam o fogo e haviam domesticado cães e ovelhas. A atividade humana da época com maior impacto sobre a organização social e sobre o ambiente foi o começo do plantio de trigo, cevada, ervilha e outros vegetais. Esse plantio passou a exigir áreas de terreno livre de sua vegetação original, providenciadas pelos inúmeros grupos humanos nessas regiões com métodos elementares de preparo do solo, ainda hoje, usados e condenados, em razão dos problemas ambientais decorrentes" (Aquecimento global e a nova geografia de produção no Brasil). Segundo a hipótese levantada pela pesquisa sobre as primeiras atividades humanas organizadas, o impacto ambiental mencionado foi decorrente:' ,
+
+    respostas: [
+      
+      { texto: "A) da manipulação de alimentos cujo cozimento e consumo liberavam grandes quantidades de calor e gás carbônico. . ", correto: false },
+
+      { texto: "B) da queima ou da deterioração das árvores derrubadas para o plantio, que contribuíram para a liberação de gás carbônico e poluentes em proporções significativas.", correto: true},
+
+      { texto: "C) do início da domesticação de animais no período mencionado, a qual contribuiu para uma forte elevação das emissões de gás metano.", correto: false}
+    ],
+
+    justificativa: " A queima de vegetação, até hoje, é um dos principais motivos de aceleração do aquecimento global. Por isso, o desmatamento, seguido de queimada, é uma prática que deve ser combatida nos dias atuais..",
+    letra:'b',
+  },
+
   {
     Questao: 'Qual impacto provocado pelo desmatamento está fortemente ligado à fauna e à flora de uma região?',
     respostas: [

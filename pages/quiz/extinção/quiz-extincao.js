@@ -82,13 +82,13 @@ function mostrarProximaQuestao(){
 
 
 function selecionarResposta(evento){
-  const answerClicked = evento.target
+  const respostaClicada = evento.target
 
-  if(answerClicked.dataset.correto){
+  if(respostaClicada.dataset.correto){
     totalCorreto++
   }
 
-  if (answerClicked.dataset.correto){
+  if (respostaClicada.dataset.correto){
     gradeQuestoes.innerHTML += `
       <div class="numeros">${indexQuestaoAtual + 1})
         <div class="grade-respostas"> 
@@ -142,8 +142,8 @@ function fimJogo(){
   const totalQuestoes = 10
   const totalIncorreto = totalQuestoes - totalCorreto
   respostaFimCorreta.innerHTML = `
-  <a href="#" class="correto id="fim-correct">Respostas certas: <span>${totalCorreto}</span></a>`
-  respostaFimIncorreta.innerHTML = `<a href="#" class="incorreto id="fim-incorrect">Respostas erradas: <span>${totalIncorreto}</span></a>`
+  <a href="#" class="correto id="fim-correto">Respostas certas: <span>${totalCorreto}</span></a>`
+  respostaFimIncorreta.innerHTML = `<a href="#" class="incorreto id="fim-incorreto">Respostas erradas: <span>${totalIncorreto}</span></a>`
 
 }
 

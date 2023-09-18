@@ -19,41 +19,41 @@ function marcarPosicao() {
     console.log(windowTop);
     
     if (windowTop > 830) {
-        home.classList.remove('active');
-        quiz.classList.add('active')
+        home.classList.remove('ativo');
+        quiz.classList.add('ativo')
     }
 
     else if (windowTop < 830) {
-        quiz.classList.remove('active');
-        home.classList.add('active');
+        quiz.classList.remove('ativo');
+        home.classList.add('ativo');
     }
 
     if (windowTop >= 1500) {
-        quiz.classList.remove('active')
-        contact.classList.add('active')
+        quiz.classList.remove('ativo')
+        contact.classList.add('ativo')
     }
 
     else if (windowTop <= 1500 & windowTop > 830) {
-        contact.classList.remove('active')
+        contact.classList.remove('ativo')
     }
 
 
     if (windowTop >= 2400) {
-        contact.classList.remove('active')
-        conteudos.classList.add('active')
+        contact.classList.remove('ativo')
+        conteudos.classList.add('ativo')
     }
 
     else if (windowTop < 2400) {
-        conteudos.classList.remove('active')
+        conteudos.classList.remove('ativo')
     }
 
     if (windowTop >= 3300) {
-        conteudos.classList.remove('active')
-        sobreNav.classList.add('active')
+        conteudos.classList.remove('ativo')
+        sobreNav.classList.add('ativo')
     }
 
     else if (windowTop < 3300) {
-        sobreNav.classList.remove('active')
+        sobreNav.classList.remove('ativo')
     }
 }
 
@@ -161,7 +161,6 @@ function mudarPagina (direcao , pagina) {
 window.addEventListener('scroll', function(){
     marcarPosicao()
 })
-
 
 class FormSubmit {
     constructor(settings) {

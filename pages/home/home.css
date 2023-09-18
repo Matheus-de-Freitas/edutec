@@ -55,24 +55,6 @@
     width: 4.375rem;
 }
 
-.contact-icons i {
-    height: 2.813rem;
-    width: 2.813rem;
-    background-color: #31762D;
-    color: #fff;
-    font-size: 22px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: all 0.5s ease;
-}
-
-.contact-icons i:hover {
-    background-color: #fff;
-    color:#31762D ;
-    border: solid 1px #31762d;
-}
 
 /* .quiz{
     display: flex;
@@ -398,6 +380,35 @@ form button {
 .contact-form .submit:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+.conteudos-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #CCCCCC;
+    margin-bottom: -20%;
+
+}
+
+.contact-icons i {
+    height: 45px;
+    width: 45px;
+    background-color: #31762D;
+    color: #fff;
+    font-size: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+
+.contact-icons i:hover {
+    background-color: #fff;
+    color:#31762D ;
+    border: solid 1px #31762d;
 }
 
 .conteudos-text {

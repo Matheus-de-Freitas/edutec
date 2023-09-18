@@ -4,23 +4,64 @@
     --h1-extincao:#AECF50;
     --h1-estufa:#50CFB1;
     --h1-aquecimento-global:#5077CF;
+
     --fundo-gabarito: #F2F2F2;
+
     --background-color-desmatamento:#EFFFED;
     --background-color-queimadas: #FFF5DA;
+    --background-color-aquecimento: #ECF3FF;
+
+    --cor-background-queimadas: #F2DABD;
+    --cor-background-extincao: #FCFFE4;
+    --cor-background-estufa: #F1FFFC;
+    --cor-background-aquecimento: #B7CDEB;
+    
     --bg-color: #2a2a2a;
-    --second-bg-color: #202020;
     --text-color: #fff;
+    --second-bg-color: #202020;
+
+    --texto-quiz-efeito-estufa: #BBF1EC;
+    --texto-quiz-extincao: #E4E9BB;
+
     --second-color: #ccc;
     --main-color: #ff4d05;
     --background-quiz-desmatamento-estufa: #172B26;
     --background-quiz-queimadas: #3e2a22;
+
+    --cor-botao-quiz-efeito-estufa:#0E7980;
+    --cor-botao-quiz-extincao: #A8B814;
+    --cor-botao-quiz-queimadas: #802D0E;
+    --cor-botao-quiz-aquecimento: #1934C4;
+
+    --background-explicacao-quiz-efeito-estufa: #42A8AF;
+    --background-explicacao-quiz-extincao: #97A521;
+    --background-explicacao-quiz-aquecimento: #DCE7F5;
+
+    --background-botao-final-quiz-efeito-estufa: #BFEDE6;
+    --background-botao-final-quiz-extincao: #E4E9BF;
+    --background-botao-final-quiz-queimadas: #F1D9C0;
+    --background-botao-final-quiz-aquecimento: #BCCDEA;
+
     --background-errado: #BD1B1B;
     --background-correto: #50CF59;
+
+    --header-explicacao-quiz-efeito-estufa: #B8EDE6;
+    --header-explicacao-quiz-extincao: #F2F4DE;
+
+    --linha-explicacao-efeito-estufa: #2C7A8F;
+    --linha-explicacao-extincao: #4C5211;
+    --linha-explicacao-queimadas: #AF5942;
+    --linha-explicacao-aquecimento: #5055CF;
+
     --background-button-conteudo: #717171;
-    --background-button-conteudo-estufa:#B8EDE6;
+
+    --background-conteudo-quiz-estufa:#B8EDE6;
+    --background-quiz-extincao: #E4E9BB;
+
     --background-button-conteudo-desmatamento:#182B17;
     --background-button-conteudo-queimadas:#2B1D17;
     --background-button-conteudo-extincao:#42442D;
     --background-button-conteudo-aquecimento:#082142;
+
     --letter-hover-button-desmatamento: #D3E9D0;
 }

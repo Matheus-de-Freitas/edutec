@@ -2,36 +2,55 @@
 @import '../../../css-site/global.css';
 @import '../../../css-site/root.css';
 
+main{
+    padding-top: 10%;
+    padding-inline: 10%;
+    padding-bottom: 5rem;
+    background: var(--background-color-aquecimento);
+}
+
 h1 {
     color: #5077CF;
     text-align: center;
-    margin-top: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.125rem;
 }
 
 .global{
     display: flex;
-    justify-content: center;
-    gap: 11rem;
-    
+    flex-direction: column;
+    gap: 3rem;
 }
 
- .polar img {
+.global img{
+    width: 50rem;
+}
+
+.polar {
     display: flex;
-    justify-content: left;
-    margin-left: 7rem;
- }
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 7rem;
+    margin-bottom: 2.5rem;
+}
 
 .globo {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    gap: 1rem;
+
 }
 
-.global img {
-    width: 65%;
+.globo .texto p {
+    width: 85%;
+    margin-left: 5.7rem;
 }
 
-.globo p {
-    display: flex;
-    justify-content: left ;
-
+.polar .texto p {
+    width: 100%;
 }

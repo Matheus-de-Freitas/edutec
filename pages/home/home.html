@@ -9,21 +9,22 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="shortcut icon" href="../../images/logos/favicon.ico" type="image/x-icon">
     <script src="./script.js" defer></script>
+    <script src="./contato.js" defer></script>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <title>Amatec</title>
 </head>
 
 <body>
     <header>
-        <a href="#" class="logo">A<span>m</span>a<span>t</span>e<span>c</span></a>
-        <ul class="navlist">
-            <li><a href="#home" class="active botao-home">home</a></li>
+        <a href="#home" class="logo">A<span>m</span>a<span>t</span>e<span>c</span></a>
+        <ul class="listaNav">
+            <li><a href="#home" class="ativo botao-home">home</a></li>
             <li><a href="#quiz" class="botao-quiz">Quiz</a></li>
             <li><a href="#contact" class="botao-contact">Contato</a></li>
             <li><a href="#conteudos" class="botao-conteudos">Conteúdos</a></li>
             <li><a href="#sobre" class="botao-sobre">Sobre</a></li>
         </ul>
-        <div class="bx bx-menu" id="menu-icon">
+        <div class="bx bx-menu" id="icone-menu">
         </div>
     </header>
 
@@ -187,22 +188,28 @@
                     <li><a href="#">projectoamatec@gmail.com</a></li>
                     <li><a href="#">Segue a gente! Compartilhe!</a></li>
                 </div>
-    
-                <div class="redes-sociais-contato">
-                    <img src="../../images/botões/redes sociais/verde/ícone do facebook (verde).svg"
-                        alt="Logo facebook (desmatamento)">
-                    <img src="../../images/botões/redes sociais/verde/ícone do instagram (verde).svg"
-                        alt="Logo instagram (desmatamento)">
-                    <img src="../../images/botões/redes sociais/verde/ícone do twiter(verde).svg"
-                        alt="Logo twitter (desmatamento)">
+
+
+                <div class="contact-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61550864116622" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/projetoamatec/" target="_blank"><i class='bx bxl-instagram' undefined ></i></a>
+                    <a href="https://twitter.com/Amatec294429" target="_blank"><i class='bx bxl-twitter'></i></a>
+                  
                 </div>
+    
+                
             </div>
+
+
+
             <div class="contact-form">
-                <form action="">
-                    <input type="name" placeholder="Insira seu nome:" required>
-                    <input type="email" placeholder="Insira seu e-mail:" required>
-                    <textarea name="" id="" cols="35" rows="10" placeholder="Insira sua mensagem:" required></textarea>
-                    <button id="submit"> Enviar Mensagem </button>
+                <form action="https://formsubmit.co/ajax/projetoamatec@gmail.com" method="POST" data-form="">
+                    <input type="name" id="nome" placeholder="Insira seu nome:" required>
+                    <input type="email" id="email" placeholder="Insira seu e-mail:" required>
+                    <textarea name="" id="mensagem" cols="35" rows="10" placeholder="Insira sua mensagem:" required></textarea>
+                    <div class="send-submit">
+                        <button type="submit" data-button class="submit" required >Enviar Mensagem</button>
+                    </div>
                 </form>
             </div>
            
@@ -228,14 +235,14 @@
                     </div>
                 
                     <div class="button-queimadas">
-                        <a href="">
+                        <a href="../conteudos/queimadas/queimadas.html">
                             <img src="../../images/logos/logos preto e branco/logo queimada-quiz(pag.inicial).svg" alt="">
                             <p>Queimadas</p>
                         </a>
                     </div>
 
                     <div class="button-extincao">
-                        <a href="">
+                        <a href="../conteudos/extinção/extincao.html">
                             <img src="../../images/logos/logos preto e branco/logo extincao-quiz(pag.inicial).svg" alt="">
                             <p>Extinção</p>
                         </a>
@@ -244,14 +251,14 @@
 
                 <div class="segundo">
                     <div class="button-estufa">
-                        <a href="">
+                        <a href="../conteudos/efeito estufa/estufa.html">
                             <img src="../../images/logos/logos preto e branco/logo efeito estufa-quiz(pag.inicial).svg" alt="">
                             <p>Efeito Estuda</p>
                         </a>
                     </div>
 
                     <div class="button-aquecimento">
-                        <a href="">
+                        <a href="../conteudos/aquecimento global/aquecimento.html">
                             <img src="../../images/logos/logos preto e branco/logo aq.global-quiz(pag.inicial).svg" alt="">
                             <p>Aquecimento Global</p>
                         </a>

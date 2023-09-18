@@ -1,0 +1,97 @@
+@import '../../../css-site/global.css';
+@import '../../../css-site/header.css';
+@import '../../../css-site/root.css';
+
+main{
+    background: var(--cor-background-extincao);
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.conteudo-header {
+    display: flex;
+    align-items: center;
+    height: 15rem; 
+    padding-top: 7rem;
+}
+  
+.titulo {
+    flex: 1; /* Crescer para ocupar espaço restante */
+    text-align: center;
+}
+.titulo h1 {
+    font-size: 3rem;
+    color: #AECF50;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cima {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 4rem;
+    width: 90rem;
+    height: 20rem;
+}
+
+  
+.cima-texto p {
+    width: 36.875rem;
+    height: 21.125rem;
+    text-align: justify;
+    margin-left: 6rem;
+    line-height: 1.9rem;
+}
+
+.cima-img img {
+    width: 37.25rem;
+    height: 18.75rem;
+    margin-bottom: 3.5rem;
+    margin-right: 6rem;
+}
+
+.baixo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2rem;
+    height: 30rem;
+    width: 90rem;
+}
+
+.baixo-img {
+    height: 18.75rem;
+    margin-bottom: 3.5rem;
+    margin-left: 6rem;
+}
+
+.baixo-img img {
+    width: 36.875rem;
+    
+}
+
+.baixo-texto {
+    height: 15rem;
+    width: 38rem;
+    margin-right: 3rem;
+    margin-bottom: 9rem;
+    
+}
+
+.baixo-texto p{
+    width: 37.25rem;
+    text-align: justify;
+    margin-right: 4rem;
+    margin-left: 3.9rem;
+    line-height: 1.9rem;
+}

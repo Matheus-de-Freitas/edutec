@@ -24,15 +24,15 @@ header {
   color: #A8CA32;  
 }
 
-.navlist {
+.listaNav {
     display: flex;
 }
 
-.navlist li {
+.listaNav li {
     text-transform: uppercase;
 }
 
-.navlist a {
+.listaNav a {
    color: #82C27C;
    font-size: 1.0625rem;
    font-weight: bold;
@@ -41,11 +41,11 @@ header {
    
 }
 
-.navlist a:hover {
+.listaNav a:hover {
     color: #C6FFC1;
 }
 
-.navlist a.active{
+.listaNav a.ativo{
     color: #C6FFC1;  /*colocar a cor do lugar selecionado amatec*/
     text-decoration: none;
     background-image: linear-gradient(to right,#C6FFC1, #C6FFC1);
@@ -54,7 +54,7 @@ header {
     background-size: 100% 3px;
 }
 
-#menu-icon {
+#icone-menu {
     font-size: 2.1875rem;
     color:#82C27C ;
     z-index: 10001;

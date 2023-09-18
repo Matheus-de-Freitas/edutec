@@ -15,6 +15,11 @@ section{
     
 }
 
+p {
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
 .titulo h1 {
     color: var(--h1-queimadas);
     font-size: 3.1875rem;

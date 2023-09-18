@@ -1,0 +1,62 @@
+@import '../../../css-site/global.css';
+@import '../../../css-site/header.css';
+@import '../../../css-site/root.css';
+
+main{
+    padding-top: 10%;
+    padding-inline: 10%;
+    padding-bottom: 5rem;
+    background: var(--cor-background-estufa);
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #50CFB1;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.estufa1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 3.5rem;
+    
+}
+
+.estufa1-img {
+    display: flex;
+    justify-content: left;
+    max-width: 65%;
+
+}
+
+ 
+.t1 {
+    margin-top: 5.5rem;
+    margin-right: 4rem;
+    padding-inline: 6.5rem;
+}
+
+.estufa2 {
+    display: flex;
+    align-items: center;
+    gap: 3.8rem;
+    margin-top: 4rem;
+}
+.estufa2-img img{
+    width: 36.7rem;
+}
+
+
+.t2  {
+    max-width: 45%;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 4rem;
+}

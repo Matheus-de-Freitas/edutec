@@ -6,6 +6,11 @@ body {
     background-color: var(--background-color-desmatamento);
 }
 
+p {
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
 .desmat {
     padding-top: 10%;
     padding-inline: 0;
@@ -19,20 +24,13 @@ body {
     justify-content: center;
 }
 
-.seta{
-    display: flex;
-    flex-direction: row-reverse;
-    margin-right: 3rem;
-    margin-top: -5%;
-}
-
 h1 {
     color: #50CF59;
     font-size: 3.1875rem;
     margin-bottom: 1.25rem;
 }
 
-.image {
+.imagem {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -40,15 +38,14 @@ h1 {
 
 }
 
-.image img {
+.imagem img {
     width: 23.75rem;
     height: auto;
     margin-right: 3.25rem;
 }
 
-.image p {
+.imagem p {
     color: #000;
-    font-size: 1.125rem;
     margin-right: 15%;
     font-weight: 500;
 }
