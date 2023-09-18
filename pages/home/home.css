@@ -18,15 +18,15 @@
     justify-content: space-between;
 }
 
-.home-img img{
+/*.home-img img{
     position: left;
-}
+}*/
 
 .home-text h1 {
     font-size: 3rem;
     font-weight: 800;
     color: #0B4C18;
-    list-style: 1.1;
+    /*list-style: 1.1;*/
     margin: 0 0 0.5rem;
     margin-top: 5%;
 }
@@ -316,7 +316,7 @@
     display: block;
     color: #333;
     font-size: 1.294rem;
-    transform: all .45s ease;
+
 }
    
 
@@ -599,7 +599,7 @@ form button {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.8;
-    margin-bottom: 1.563;
+    margin-bottom: 1.563rem;
     margin-left: 1.25rem;
     width: 13.75rem;
     height: 32.5rem;
