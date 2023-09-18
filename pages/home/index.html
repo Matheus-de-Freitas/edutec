@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./home.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="shortcut icon" href="../../images/logos/favicon.ico" type="image/x-icon">
     <script src="./script.js" defer></script>
@@ -20,7 +20,7 @@
         <ul class="listaNav">
             <li><a href="#home" class="ativo botao-home">home</a></li>
             <li><a href="#quiz" class="botao-quiz">Quiz</a></li>
-            <li><a href="#contact" class="botao-contact">Contato</a></li>
+            <li><a href="#contato" class="botao-contato">Contato</a></li>
             <li><a href="#conteudos" class="botao-conteudos">Conteúdos</a></li>
             <li><a href="#sobre" class="botao-sobre">Sobre</a></li>
         </ul>
@@ -32,7 +32,7 @@
         <section class="home" id="home">
 
             <div>
-                <div class="home-text">
+                <div class="texto-home">
                     <h1>“A natureza é o único livro <br> que oferece um conteúdo<br> valioso em todas as suas <br>folhas.”</h1>
                     <p>Qual será nossa escolha? Degradação recuperação? 
                         Escassez ou fartura? Compaixão ou cobiça? Amor ou medo? 
@@ -102,8 +102,11 @@
                             src="../../images/setas/seta seleção de quiz/queimadas/seta direita (queimadas).svg"
                             alt="Seta para direita" onclick="mudarPagina('direita','extincao')">
                     </div>
-                    <img src="../../images/botões/botões quiz/botão começar/botão começar( queimadas).svg"
-                        alt="Botão de começar" id="comecar-queimadas">
+                    <a href="../quiz/queimadas/quiz-queimadas.html">
+                        <img src="../../images/botões/botões quiz/botão começar/botão começar( queimadas).svg"
+                            alt="Botão de começar" id="comecar-queimadas">
+                    </a>
+
                 </div>
 
             </div>
@@ -125,8 +128,10 @@
                         src="../../images/setas/seta seleção de quiz/extinção/seta direita (processo de extinção).svg"
                             alt="Seta para direita" onclick="mudarPagina('direita', 'estufa')">
                     </div>
-                    <img src="../../images/botões/botões quiz/botão começar/botão começar( extinção).svg"
-                        alt="Botão de começar" id="comecar-extincao">
+                    <a href="../quiz/extinção/quiz-extincao.html">
+                        <img src="../../images/botões/botões quiz/botão começar/botão começar( extinção).svg"
+                            alt="Botão de começar" id="comecar-extincao">
+                    </a>
                 </div>
             </div>
 
@@ -147,8 +152,10 @@
                         src="../../images/setas/seta seleção de quiz/efeito estufa/seta direita (efeito estufa).svg"
                             alt="Seta para direita" onclick="mudarPagina('direita', 'aquecimento')">
                     </div>
-                    <img src="../../images/botões/botões quiz/botão começar/botão começar( efeito estufa).svg"
-                        alt="Botão de começar" id="comecar-estufa">
+                    <a href="../quiz/efeito estufa/quiz-estufa.html">
+                        <img src="../../images/botões/botões quiz/botão começar/botão começar( efeito estufa).svg"
+                            alt="Botão de começar" id="comecar-estufa">
+                    </a>
                 </div>
             </div>
 
@@ -168,8 +175,11 @@
                     src="../../images/setas/seta seleção de quiz/aquecimento global/seta direita (aquecimento global).svg"
                         alt="Seta para direita" onclick="mudarPagina('direita', 'desmatamento')">
                 </div>
-                <img src="../../images/botões/botões quiz/botão começar/botão começar(azul- aquecimento global).svg"
-                    alt="Botão de começar" id="comecar-aquecimento">
+
+                <a href="../quiz/aquecimento global/quiz-aquecimento.html">
+                    <img src="../../images/botões/botões quiz/botão começar/botão começar(azul- aquecimento global).svg"
+                        alt="Botão de começar" id="comecar-aquecimento">
+                </a>
             </div>
         </div>
 
@@ -177,46 +187,40 @@
 
         </section>
 
-        <section class="contact" id="contact" >
-            <div class="contact-text">
+        <section class="contato" id="contato" >
+            <div class="texto-contato">
                 <h2>Contate-<span>nos!</span></h2>
                 <h4>Vamos te ouvir</h4>
                 <p>Estamos aptos para ouvir a sua opinião sobre o
                     nosso trabalho, pontos a melhorar e muito mais.</p>
     
-                <div class="list">
+                <div class="lista">
                     <li><a href="#">projectoamatec@gmail.com</a></li>
                     <li><a href="#">Segue a gente! Compartilhe!</a></li>
                 </div>
-
-
-                <div class="contact-icons">
-                    <a href="https://www.facebook.com/profile.php?id=61550864116622" target="_blank"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://www.instagram.com/projetoamatec/" target="_blank"><i class='bx bxl-instagram' undefined ></i></a>
-                    <a href="https://twitter.com/Amatec294429" target="_blank"><i class='bx bxl-twitter'></i></a>
-                  
-                </div>
     
-                
+                <div class="redes-sociais-contato">
+                    <img src="../../images/botões/redes sociais/verde/ícone do facebook (verde).svg"
+                        alt="Logo facebook (desmatamento)">
+                    <img src="../../images/botões/redes sociais/verde/ícone do instagram (verde).svg"
+                        alt="Logo instagram (desmatamento)">
+                    <img src="../../images/botões/redes sociais/verde/ícone do twiter(verde).svg"
+                        alt="Logo twitter (desmatamento)">
+                </div>
             </div>
-
-
-
-            <div class="contact-form">
-                <form action="https://formsubmit.co/ajax/projetoamatec@gmail.com" method="POST" data-form="">
-                    <input type="name" id="nome" placeholder="Insira seu nome:" required>
-                    <input type="email" id="email" placeholder="Insira seu e-mail:" required>
-                    <textarea name="" id="mensagem" cols="35" rows="10" placeholder="Insira sua mensagem:" required></textarea>
-                    <div class="send-submit">
-                        <button type="submit" data-button class="submit" required >Enviar Mensagem</button>
-                    </div>
+            <div class="form-contato">
+                <form action="">
+                    <input type="name" placeholder="Insira seu nome:" required>
+                    <input type="email" placeholder="Insira seu e-mail:" required>
+                    <textarea name="" id="" cols="35" rows="10" placeholder="Insira sua mensagem:" required></textarea>
+                    <button id="submit"> Enviar Mensagem </button>
                 </form>
             </div>
            
         </section>
 
         <!---conteudos-->
-        <section id='conteudos'class="conteudos-text">
+        <section id='conteudos'class="texto-conteudos">
             <h2>Conteúdos</h2>
         </section>
 
@@ -227,21 +231,21 @@
             
             <div class="buttons-c">
                 
-                <div class="button-desmatamento">
+                <div class="botao-desmatamento">
                         <a href="../conteudos/desmatamento/desmatamento.html">
                             <img src="../../images/logos/logos preto e branco/logo desmatamento-quiz(pag.inicial).svg" alt="">
                             <p>Desmatamento</p>
                         </a>
                     </div>
                 
-                    <div class="button-queimadas">
+                    <div class="botao-queimadas">
                         <a href="../conteudos/queimadas/queimadas.html">
                             <img src="../../images/logos/logos preto e branco/logo queimada-quiz(pag.inicial).svg" alt="">
                             <p>Queimadas</p>
                         </a>
                     </div>
 
-                    <div class="button-extincao">
+                    <div class="botao-extincao">
                         <a href="../conteudos/extinção/extincao.html">
                             <img src="../../images/logos/logos preto e branco/logo extincao-quiz(pag.inicial).svg" alt="">
                             <p>Extinção</p>
@@ -250,14 +254,14 @@
                 </div>
 
                 <div class="segundo">
-                    <div class="button-estufa">
+                    <div class="botao-estufa">
                         <a href="../conteudos/efeito estufa/estufa.html">
                             <img src="../../images/logos/logos preto e branco/logo efeito estufa-quiz(pag.inicial).svg" alt="">
                             <p>Efeito Estuda</p>
                         </a>
                     </div>
 
-                    <div class="button-aquecimento">
+                    <div class="botao-aquecimento">
                         <a href="../conteudos/aquecimento global/aquecimento.html">
                             <img src="../../images/logos/logos preto e branco/logo aq.global-quiz(pag.inicial).svg" alt="">
                             <p>Aquecimento Global</p>
@@ -268,20 +272,20 @@
             
         </section>
         <section class="sobre1">
-            <section class="services" id="sobre">
-                <div class="main-text">
+            <section class="serviços" id="sobre">
+                <div class="texto-principal">
                     <p>Sobre a gente.</p>
                     <h1>A<span>m</span>a<span>t</span>e<span></span>c</h1>
                 </div>
         
-                <div class="services-content">
+                <div class="conteudo-serviços">
                     <div class="caixas">
 
                         <div class="seta">
                             <img src="../../images/setas/seta seleção de quiz/desmatamento/seta esquerda (desmatamento).svg" alt="" onclick="mudarConteudo('esquerda', 'integrantes2')">
                         </div>
                         
-                        <div class="box">
+                        <div class="caixa">
                             <div class="s-icons">
                                 <i class='bx bxs-leaf' ></i>
                             </div>
@@ -289,7 +293,7 @@
                             <p>O Amatec é voltado à praticidade no estudo de jovens que buscam informações fáceis e objetivas. Com questões de vestibulares  nós trazemos um site voltado especificamente aos problemas ambientais que enfrentamos.</p>
                         </div>
                             
-                        <div class="box">
+                        <div class="caixa">
                             <div class="s-icons">
                                 <i class='bx bx-book' ></i>
                             </div>
@@ -298,7 +302,7 @@
                                     
                         </div>
 
-                        <div class="box">
+                        <div class="caixa">
                             <div class="s-icons">
                                 <i class='bx bx-world' ></i>
                             </div>
@@ -318,71 +322,71 @@
         </section>
 
         <section id="proxima-pagina" class="integrantes1">
-            <section class="integrants" id="sobre">
-                <div class="integrants-text">
+            <section class="integrantes" id="sobre">
+                <div class="texto-integrantes">
                     <p>TEAM</p>
                     <h1>A<span>m</span>a<span>t</span>e<span></span>c</h1>
                 </div>
                 
-                <div class="integrants-content">
+                <div class="conteudo-integrantes">
                     
                     <div class="seta">
                         <img src="../../images/setas/seta seleção de quiz/desmatamento/seta esquerda (desmatamento).svg" alt="" onclick="mudarConteudo('esquerda','sobre')">
                     </div>
 
-                    <div class="card-wrapper" id="integrantes">
+                    <div class="embrulha-card" id="integrantes">
                         <div class="card">
-                            <div class="image-content">
+                            <div class="imagem-conteudo">
                                 <span class="overlay"> </span>
         
-                                <div class="card-image">
+                                <div class="imagem-card">
                                     <img src="../../images/imagens/fotos integrantes/Gabriella.svg" alt="" class="card-img2">
                                 </div>
                             </div>
         
         
-                            <div class="card-content">
-                                <h2 class="name">Gabriella Victória</h2>
-                                <p class="description"><strong>Idade:</strong> 16 anos</p>
-                                <p class="description"><strong>Formação:</strong> Unasp - Técnico de Informática</p>
+                            <div class="conteudo-card">
+                                <h2 class="nome">Gabriella Victória</h2>
+                                <p class="descricao"><strong>Idade:</strong> 16 anos</p>
+                                <p class="descricao"><strong>Formação:</strong> Unasp - Técnico de Informática</p>
                             </div>
                         </div>
                     </div>
         
-                    <div class="card-wrapper">
+                    <div class="embrulha-card">
                         <div class="card">
-                            <div class="image-content">
+                            <div class="imagem-conteudo">
                                 <span class="overlay"> </span>
         
-                                <div class="card-image">
+                                <div class="imagem-card">
                                     <img src="../../images/imagens/fotos integrantes/Gui.svg" alt="" class="card-img">
                                 </div>
                             </div>
         
         
-                            <div class="card-content">
-                                <h2 class="name">Guilherme Oliveira</h2>
-                                <p class="description"><strong>Idade:</strong> 16 anos</p>
-                                <p class="description"><strong>Formação:</strong> Unasp - Técnico de Informática</p>
+                            <div class="conteudo-card">
+                                <h2 class="nome">Guilherme Oliveira</h2>
+                                <p class="descricao"><strong>Idade:</strong> 16 anos</p>
+                                <p class="descricao"><strong>Formação:</strong> Unasp - Técnico de Informática</p>
                             </div>
                         </div>
                     </div>
         
-                    <div class="card-wrapper">
+                    <div class="embrulha-card">
                         <div class="card">
-                            <div class="image-content">
+                            <div class="imagem-conteudo">
                                 <span class="overlay"> </span>
         
-                                <div class="card-image">
+                                <div class="imagem-card">
                                     <img src="../../images/imagens/fotos integrantes/Matheus.svg" alt="" class="card-img2">
                                 </div>
                             </div>
         
         
-                            <div class="card-content">
-                                <h2 class="name">Matheus de Freitas</h2>
-                                <p class="description"><strong>Idade:</strong> 17 anos</p>
-                                <p class="description"><strong>Formação:</strong> Unasp - Técnico de Informática</p>
+                            <div class="conteudo-card">
+                                <h2 class="nome">Matheus de Freitas</h2>
+                                <p class="descricao"><strong>Idade:</strong> 17 anos</p>
+                                <p class="descricao"><strong>Formação:</strong> Unasp - Técnico de Informática</p>
                             </div>
                         </div>
                     </div>
@@ -396,71 +400,71 @@
         </section>
 
         <section id="proxima-pagina" class="integrantes2">
-            <section class="integrants" id="sobre">
-                <div class="integrants-text">
+            <section class="integrantes" id="sobre">
+                <div class="texto-integrantes">
                     <p>TEAM</p>
                     <h1>A<span>m</span>a<span>t</span>e<span></span>c</h1>
                 </div>
                     
-                <div class="integrants-content">
+                <div class="conteudo-integrantes">
                         
                     <div class="seta">
                         <img src="../../images/setas/seta seleção de quiz/desmatamento/seta esquerda (desmatamento).svg" onclick="mudarConteudo('esquerda' , 'integrantes1')" alt="">
                     </div>
     
-                    <div class="card-wrapper" id="integrantes">
+                    <div class="embrulha-card" id="integrantes">
                         <div class="card">
-                            <div class="image-content">
+                            <div class="imagem-conteudo">
                                 <span class="overlay"> </span>
             
-                                <div class="card-image">
+                                <div class="imagem-card">
                                     <img src="../../images/imagens/fotos integrantes/Kauã Ramos.svg" alt="" class="card-img2">
                                 </div>
                             </div>
             
             
-                            <div class="card-content">
-                                <h2 class="name">Kauã Ramos</h2>
-                                <p class="description"><strong>Idade:</strong> 16 anos</p>
-                                <p class="description"><strong>Formação:</strong> Unasp - Técnico de Informática</p>
+                            <div class="conteudo-card">
+                                <h2 class="nome">Kauã Ramos</h2>
+                                <p class="descricao"><strong>Idade:</strong> 16 anos</p>
+                                <p class="descricao"><strong>Formação:</strong> Unasp - Técnico de Informática</p>
                             </div>
                         </div>
                     </div>
             
-                    <div class="card-wrapper">
+                    <div class="embrulha-card">
                         <div class="card">
-                            <div class="image-content">
+                            <div class="imagem-conteudo">
                                 <span class="overlay"> </span>
             
-                                <div class="card-image">
+                                <div class="imagem-card">
                                     <img src="../../images/imagens/fotos integrantes/Julia.svg" alt="" class="card-img">
                                 </div>
                             </div>
             
             
-                            <div class="card-content">
-                                <h2 class="name">Julia Souza</h2>
-                                <p class="description"><strong>Idade:</strong> 16 anos</p>
-                                <p class="description"><strong>Formação:</strong> Unasp - Técnico de Informática</p>
+                            <div class="conteudo-card">
+                                <h2 class="nome">Julia Souza</h2>
+                                <p class="descricao"><strong>Idade:</strong> 16 anos</p>
+                                <p class="descricao"><strong>Formação:</strong> Unasp - Técnico de Informática</p>
                             </div>
                         </div>
                     </div>
             
-                    <div class="card-wrapper">
+                    <div class="embrulha-card">
                         <div class="card">
-                            <div class="image-content">
+                            <div class="imagem-conteudo">
                                 <span class="overlay"> </span>
             
-                                <div class="card-image">
+                                <div class="imagem-card">
                                     <img src="../../images/imagens/fotos integrantes/João Martins.svg" alt="" class="card-img2">
                                 </div>
                             </div>
             
             
-                            <div class="card-content">
-                                <h2 class="name">João Victor Martins</h2>
-                                <p class="description"><strong>Idade:</strong> 16 anos</p>
-                                <p class="description"><strong>Formação:</strong> Unasp - Técnico de Informática</p>
+                            <div class="conteudo-card">
+                                <h2 class="nome">João Victor Martins</h2>
+                                <p class="descricao"><strong>Idade:</strong> 16 anos</p>
+                                <p class="descricao"><strong>Formação:</strong> Unasp - Técnico de Informática</p>
                             </div>
                         </div>
                     </div>
@@ -474,8 +478,8 @@
     </main>
 
     <footer>
-        <section class="footer">
-            <div class="last-text">
+        <section class="rodape">
+            <div class="texto-final">
                 <p> &copy Copyright 2022/2023 por Equipe Amatec.</p>
             </div>
     
@@ -485,3 +489,6 @@
     
         </section>
     </footer>
+
+</body>
+</html>

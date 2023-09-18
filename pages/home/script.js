@@ -1,6 +1,6 @@
 const home = document.querySelector('.botao-home')
 const quiz = document.querySelector('.botao-quiz')
-const contact = document.querySelector('.botao-contact')
+const contato = document.querySelector('.botao-contato')
 const conteudos = document.querySelector('.botao-conteudos')
 const sobreNav = document.querySelector('.botao-sobre')
 
@@ -15,44 +15,44 @@ const integrantes1 = document.querySelector('.integrantes1')
 const integrantes2 = document.querySelector('.integrantes2')
 
 function marcarPosicao() {
-    const windowTop = window.pageYOffset;
-    console.log(windowTop);
+    const janelaTopo = window.pageYOffset;
+    console.log(janelaTopo);
     
-    if (windowTop > 830) {
+    if (janelaTopo > 830) {
         home.classList.remove('ativo');
         quiz.classList.add('ativo')
     }
 
-    else if (windowTop < 830) {
+    else if (janelaTopo < 830) {
         quiz.classList.remove('ativo');
         home.classList.add('ativo');
     }
 
-    if (windowTop >= 1500) {
+    if (janelaTopo >= 1500) {
         quiz.classList.remove('ativo')
-        contact.classList.add('ativo')
+        contato.classList.add('ativo')
     }
 
-    else if (windowTop <= 1500 & windowTop > 830) {
-        contact.classList.remove('ativo')
+    else if (janelaTopo <= 1500 & janelaTopo > 830) {
+        contato.classList.remove('ativo')
     }
 
 
-    if (windowTop >= 2400) {
-        contact.classList.remove('ativo')
+    if (janelaTopo >= 2400) {
+        contato.classList.remove('ativo')
         conteudos.classList.add('ativo')
     }
 
-    else if (windowTop < 2400) {
+    else if (janelaTopo < 2400) {
         conteudos.classList.remove('ativo')
     }
 
-    if (windowTop >= 3300) {
+    if (janelaTopo >= 3300) {
         conteudos.classList.remove('ativo')
         sobreNav.classList.add('ativo')
     }
 
-    else if (windowTop < 3300) {
+    else if (janelaTopo < 3300) {
         sobreNav.classList.remove('ativo')
     }
 }
@@ -161,4 +161,3 @@ function mudarPagina (direcao , pagina) {
 window.addEventListener('scroll', function(){
     marcarPosicao()
 })
-
