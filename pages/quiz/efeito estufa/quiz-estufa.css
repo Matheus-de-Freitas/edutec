@@ -261,14 +261,14 @@ body{
 
 .correto {
     color: #fff;
-    background-color: #50CF59;
+    background-color: var(--background-correto);
     font-weight: bold;
     transition: all .5s ease;
 }
   
 .incorreto {
     color: #fff;
-    background-color: #BD1B1B;
+    background-color: var(--background-errado);
     transition: all .5s ease;
 }
 

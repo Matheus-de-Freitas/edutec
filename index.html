@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./pages/home/home.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="shortcut icon" href="../../images/logos/favicon.ico" type="image/x-icon">
-    <script src="./script.js" defer></script>
-    <script src="./contato.js" defer></script>
+    <script src="./pages/home/script.js" defer></script>
+    <script src="./pages/home/contato.js" defer></script>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <title>Amatec</title>
 </head>
@@ -198,22 +198,28 @@
                     <li><a href="#">projectoamatec@gmail.com</a></li>
                     <li><a href="#">Segue a gente! Compartilhe!</a></li>
                 </div>
-    
-                <div class="redes-sociais-contato">
-                    <img src="../../images/botões/redes sociais/verde/ícone do facebook (verde).svg"
-                        alt="Logo facebook (desmatamento)">
-                    <img src="../../images/botões/redes sociais/verde/ícone do instagram (verde).svg"
-                        alt="Logo instagram (desmatamento)">
-                    <img src="../../images/botões/redes sociais/verde/ícone do twiter(verde).svg"
-                        alt="Logo twitter (desmatamento)">
+
+
+                <div class="contact-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61550864116622" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/projetoamatec/" target="_blank"><i class='bx bxl-instagram' undefined ></i></a>
+                    <a href="https://twitter.com/Amatec294429" target="_blank"><i class='bx bxl-twitter'></i></a>
+                  
                 </div>
+    
+                
             </div>
+
+
+
             <div class="form-contato">
-                <form action="">
-                    <input type="name" placeholder="Insira seu nome:" required>
-                    <input type="email" placeholder="Insira seu e-mail:" required>
-                    <textarea name="" id="" cols="35" rows="10" placeholder="Insira sua mensagem:" required></textarea>
-                    <button id="submit"> Enviar Mensagem </button>
+                <form action="https://formsubmit.co/ajax/projetoamatec@gmail.com" method="POST" data-form="">
+                    <input type="name" id="nome" placeholder="Insira seu nome:" required>
+                    <input type="email" id="email" placeholder="Insira seu e-mail:" required>
+                    <textarea name="" id="mensagem" cols="35" rows="10" placeholder="Insira sua mensagem:" required></textarea>
+                    <div class="send-submit">
+                        <button type="submit" data-button class="submit" required >Enviar Mensagem</button>
+                    </div>
                 </form>
             </div>
            

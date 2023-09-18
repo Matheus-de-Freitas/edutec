@@ -92,13 +92,13 @@ function selecionarResposta(evento){
     gradeQuestoes.innerHTML += `
       <div class="numeros">${indexQuestaoAtual + 1})
         <div class="grade-respostas"> 
-          <p class="questoes-corretas"><img src="../imgs/simbolos/resp-certa-quiz.png" alt=""></p>
+          <p class="questoes-corretas"><img src="../../../images/ilustrações/quiz/certo-errado/resp-certa-quiz.png" alt=""></p>
         </div>`
   } else {
     gradeQuestoes.innerHTML += `
       <div class="numeros">${indexQuestaoAtual + 1})
         <div class="grade-respostas"> 
-          <p class="incorreto"><img src="../imgs/simbolos/resp-errada-quiz.png" alt=""></p>
+          <p class="incorreto"><img src="../../../images/ilustrações/quiz/certo-errado/resp-certa-quiz.png" alt=""></p>
       </div>`
   }
 
