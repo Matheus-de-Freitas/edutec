@@ -98,7 +98,7 @@ function selecionarResposta(evento){
     gradeQuestoes.innerHTML += `
       <div class="numeros">${indexQuestaoAtual + 1})
         <div class="grade-respostas"> 
-          <p class="incorreto"><img src="../../../images/ilustrações/quiz/certo-errado/resp-certa-quiz.png" alt=""></p>
+          <p class="incorreto"><img src="../../../images/ilustrações/quiz/certo-errado/resp-errada-quiz.png" alt=""></p>
       </div>`
   }
 
@@ -156,135 +156,140 @@ function fimJogo(){
 const questao = [
 
   {
-    Questao: ' "Assinale a alternativa que NÃO apresenta uma causa do desmatamento:" ' ,
-    respostas: [
-      { texto: "A) Exploração de madeira.", correto: false },
-      { texto: "B) Produção de carvão.", correto: false },
-      { texto: "C) Conservação dos rios.", correto: true }
-    ],
-    justificativa: "C) O desmatamento possui várias causas, relacionadas com questões econômicas, políticas e sociais, mas não está vinculado à conservação dos cursos de água.",
-    letra: 'C',
+  Questao: "Qual é a principal causa da perda de biodiversidade global?",
+  respostas: [
+    { texto: "A) Poluição.", correto: false },
+    { texto: "B) Mudança climática.", correto: false},
+    { texto: "C) Destruição de habitat.", correto: true}
+  ],
+  justificativa: " C) A destruição do habitat é a principal causa da perda de biodiversidade global, resultante da conversão de áreas naturais em áreas urbanas, agrícolas e industriais.",
+  letra:'c',
   },
+  
+  {Questao: "O que é a sobreexploração de recursos naturais?",
+  respostas: [
+    { texto: "A) Uso sustentável de recursos.", correto: false },
+    { texto: "B) Exploração excessiva de recursos.", correto: true },
+    { texto: "C) Proteção de recursos naturais.", correto: false }
+  ],
+  justificativa: " B) A sobreexploração ocorre quando os recursos naturais são utilizados em quantidades que excedem sua capacidade de regeneração.",
+  letra:'b',
+  },
+  
+  {Questao: "Quais são as espécies que não são nativas de uma região, mas que podem causar danos à biodiversidade local?",
+  respostas: [
+    { texto: "A) Espécies exóticas invasoras.", correto: true },
+    { texto: "B) Espécies endêmicas .", correto: false },
+    { texto: "C) Espécies ameaçadas.", correto: false }
+  ],
+  justificativa: " A) Espécies exóticas invasoras são aquelas que não são nativas de uma região e podem prejudicar a biodiversidade local competindo com as espécies nativas.",
+  letra:'a',
+  },
+  
+  {Questao: "Como a poluição do ar e da água afeta a biodiversidade? ",
+  respostas: [
+    { texto: "A) Aumenta a diversidade de espécies.", correto: false },
+    { texto: "B) Pode contaminar habitats e prejudicar as espécies .", correto: true },
+    { texto: "C) Melhora a saúde das espécies .", correto: false }
+  ],
+  justificativa: " B) A poluição do ar e da água pode causar danos diretos aos habitats e às espécies, prejudicando a biodiversidade.",
+  letra:'b',
+  },
+  
+  { Questao: "Qual é o termo usado para descrever a variedade de vida na Terra ?",
+  respostas: [
+    { texto: "A) Biodiversidade.", correto: true },
+    { texto: "B) Unidade ecológica.", correto: false },
+    { texto: "C) Ecossistema .", correto: false }
+  ],
+  justificativa: " A) Biodiversidade se refere à variedade de vida na Terra, incluindo a diversidade de espécies, genes e ecossistemas .",
+  letra:'a',
+  
+  },
+  
   {
-    Questao: "Indique um fenômeno geomorfológico que é diretamente aumentado pelo desmatamento:",
-    respostas: [
-      { texto: "A) Vulcanismo", correto: false },
-      { texto: "B) Erosão", correto: true },
-      { texto: "C) Sedimentação", correto: false },
-    ],
-    justificativa: "B) A erosão é diretamente aumentada pelo desmatamento, visto que o solo sem vegetação natural fica muito mais suscetível aos processos erosivos.",
-    letra: 'B'
+          
+      Questao: "Qual das seguintes ações humanas é uma causa direta de extinção de espécies?",
+  respostas: [
+   { texto: "A) Conservação de habitats naturais.", correto: false },
+   { texto: "B) Educação ambiental.", correto: false},
+   { texto: "C) Desmatamento de florestas tropicais.", correto: true}
+  ],
+  justificativa: " C) O desmatamento de florestas tropicais é uma causa direta de extinção de espécies devido à perda de habitat .",
+  letra:'c',
   },
+  
   {
-    Questao: 'Qual impacto provocado pelo desmatamento está fortemente ligado à fauna e à flora de uma região?',
-    respostas: [
-      { texto: 'A) Diminuição da biodiversidade', correto: true },
-      { texto: 'B) Elevação do nível dos oceanos', correto: false },
-      { texto: 'C) Contaminação do nível freático', correto: false },
-    ],
-    justificativa: "A) O desmatamento provoca a perda do habitat de espécies de fauna e flora locais e contribui diretamente para a diminuição da biodiversidade de uma região.",
-    letra: 'A'
+          
+      Questao: "Qual das seguintes opções é um exemplo de extinção em massa ocorrida no passado ?",
+  respostas: [
+   { texto: "A) Extinção dos dinossauros naturais.", correto: true },
+   { texto: "B) Extinção das abelhas.", correto: false},
+   { texto: "C) Extinção dos tigres.", correto: false}
+  ],
+  justificativa: " A) : A extinção dos dinossauros é um exemplo famoso de extinção em massa ocorrida no passado.",
+  letra:'a',
   },
+  
+  
   {
-    Questao: "A remoção da vegetação, causada pelo desmatamento, implica na... ",
-    respostas: [
-      { texto: "A) Manutenção do equilíbrio ambiental.", correto: false },
-      { texto: "B) Redução da infiltração da água no solo.", correto: true },
-      { texto: "C) Conservação das nascentes de água", correto: false }
-    ],
-    justificativa: "B) Por meio do desmatamento, a capacidade de infiltração de água no solo fica comprometida, reduzindo assim a quantidade de água armazenada nos aquíferos.",
-    letra: 'B'
+          
+   Questao: "O que é a Lista Vermelha da IUCN?",
+  respostas: [
+   { texto: "A)  Uma lista de espécies extintas.", correto: false },
+   { texto: "B) Uma lista de espécies em perigo de extinção.", correto: true},
+   { texto: "C) Uma lista de espécies protegidas por lei.", correto: false}
+  ],
+  justificativa: " B) : A Lista Vermelha da IUCN é uma lista que avalia o status de conservação das espécies, identificando aquelas em perigo de extinção.",
+  letra:'b',
   },
+  
   {
-    Questao: "Uma das causas do desmatamento na Mata Atlântica é a...",
-    respostas: [
-      { texto: "A) Expansão da urbanização", correto: true },
-      { texto: "B) Cultivação de cereais", correto: false },
-      { texto: "C) Construção de hidrelétricas", correto: false },
-    ],
-    justificativa: "A) A Mata Atlântica, bioma presente especialmente na porção centro-sul brasileira, foi duramente atingida pelo avanço da urbanização do país, marcado pelo crescimento desordenado das cidades.",
-    letra: 'A'
+         
+  Questao: " O que é a biodiversidade genética?",
+  respostas: [
+   { texto: "A) A variedade de genes dentro de uma espécie.", correto: true },
+   { texto: "B) A variedade de espécies em um ecossistema.", correto: false},
+   { texto: "C) A variedade de ecossistemas em todo o mundo.", correto: false}
+  ],
+  justificativa: " A) : Biodiversidade genética refere-se à diversidade de genes dentro de uma espécie.",
+  letra:'a',
   },
+  
+         
   {
-    Questao: 'No Brasil, o crescimento dos índices de desmatamento está fortemente ligado à:',
-    respostas: [
-      { texto: 'A) Construção de usinas nucleares.', correto: false },
-      { texto: 'B) Exploração de bacias sedimentares', correto: false },
-      { texto: 'C) Promoção de atividades agropecuárias', correto: true },
-    ],
-    justificativa: "C) O desmatamento no Brasil está fortemente vinculado às atividades agropecuárias. Atividades como a plantação de grãos e a criação de animais são comumente apontadas como grandes causadoras do desmatamento no país.",
-    letra: 'C'
+    Questao: "Qual das seguintes atividades humanas pode levar à degradação dos solos e afetar a biodiversidade?",
+  respostas: [
+   { texto: "A) Proteção de áreas naturais.", correto: false },
+   { texto: "B) Reflorestamento.", correto: false},
+   { texto: "C) Urbanização descontrolada.", correto: true}
+  ],
+  justificativa: " C) : A urbanização descontrolada pode levar à destruição de habitats naturais e à degradação dos solos, afetando a biodiversidade.",
+  letra:'c',
   },
+  
   {
-    Questao: "Qual das seguintes opções é um exemplo de extinção em massa ocorrida no passado?",
-    respostas: [
-      { texto: "A) Amazônia.", correto: true },
-      { texto: "B) Caatinga.", correto: false },
-      { texto: "C) Cocais.", correto: false }
-    ],
-    justificativa: "A) A Amazônia é o bioma mais atingido pelo desmatamento no Brasil, principalmente por causa da expansão da fronteira agrícola brasileira, que atinge duramente a porção centro-sul desse bioma. ",
-    letra: 'A'
-  },
-  {
-    Questao: "Uma medida para atenuar os processos de desmatamento no meio ambiente é a?",
-    respostas: [
-      { texto: "A) Remoção de árvores de grande porte.", correto: false },
-      { texto: "B) Reflorestação de regiões devastadas.", correto: true },
-      { texto: "C) Utilização de fontes não renováveis.", correto: false },
-    ],
-    justificativa: "B) Uma medida que busca solucionar os problemas resultantes do desmatamento é a recomposição da cobertura vegetal natural por meio de ações de reflorestamento.",
-    letra: 'B'
-  },
-  {
-    Questao: 'Parceiros comerciais do Brasil no exterior, principalmente os compradores de commodities produzidas na Amazônia, andam preocupados em evitar o que chamam de “desmatamento importado”, e têm exigido cada vez mais garantias de que os bens que compram são produzidos em conformidade com normas de respeito ao meio ambiente. A concepção de "desmatamento importado":',
-    respostas: [
-      { texto: 'A) Estende às economias globais a responsabilidade sobre mudanças planetárias.', correto: true },
-      { texto: 'B) Impede o crescimento econômico dos países do Terceiro Mundo.', correto: false },
-      { texto: 'C) Privilegia a qualidade de vida em prejuízo da produção de riqueza.', correto: false },
-    ],
-    justificativa: "A) O desmatamento importado ocorre por meio da compra de produtos que são provenientes de zonas geográficas que sofreram com a derrubada de árvores. Logo, é um conceito que remete à responsabilidade dos compradores pela origem dos produtos consumidos. ",
-    letra: 'A'
-  },
-  {
-    Questao: 'A redução dos tamanhos das florestas naturais em todo o mundo tem ocorrido como resultado, principalmente, de incêndios, corte de árvores para propósitos comerciais, devastação de terras para utilização da agropecuária, ou até fenômenos naturais. (...) A persistência na ocorrência desses problemas torna relevante a manutenção de debates sobre as causas e os fatores relacionados ao desmatamento no Brasil, detentor da maior floresta mundial. Sobre o desmatamento no Brasil é CORRETO afirmar:',
-    respostas: [
-      { texto: 'A) O desmatamento é um processo inerente ao progresso, sem o qual o crescimento econômico é inviável.', correto: false },
-      { texto: 'B) A caatinga é o bioma brasileiro com menor percentual de área desmatada, devido, sobretudo, à aridez dos solos, o que inibe a agricultura.', correto: false },
-      { texto: 'C) Como consequência do desmatamento, acontece a diminuição da recarga dos aquíferos.', correto: true },
-    ], 
-    justificativa: "C) A diminuição da recarga dos aquíferos, por meio da dificuldade de entrada da água no subsolo, é uma consequência gerada pela remoção da vegetação nativa.",
-    letra: 'C'
-  },
-  {
-    Questao: 'O desmatamento atual na Amazônia cresceu em relação a 2015. Metade da área devastada fica no estado do Pará, atingindo áreas privadas ou de posse, sendo ainda registrados focos em unidades de conservação, assentamentos de reforma agrária e terras indígenas. Tal situação coloca em risco o compromisso firmado pelo Brasil na 21ª Conferência das Nações Unidas sobre Mudança Climática (COP 21), ocorrida em 2015. O desmatamento na Amazônia tem raízes históricas ligadas a processos que ocorrem desde 1970. Com base nos dados e em seus conhecimentos, aponte a afirmação correta.',
-    respostas: [
-      { texto: 'A) A extração ilegal de madeira na Amazônia vem sendo monitorada por países estrangeiros devido às exigências na COP 21, pois eles são os maiores beneficiários dos acordos da Conferência.', correto: false },
-      { texto: 'B) A grilagem de terras em regiões de grandes projetos de infraestrutura, a extração ilegal de madeira e a construção de rodovias estão entre as causas do desmatamento na Amazônia. ', correto: true },
-      { texto: 'C) Os grandes projetos de infraestrutura causam degradação da floresta amazônica, com intensidade moderada e temporária, auxiliando a regularização fundiária.', correto: false },
-    ], 
-    justificativa: "B) Os motivos do desmatamento da Amazônia estão fortemente vinculados a questões econômicas, a atividades ilegais, como grilagem de terras, projetos estruturais e atividades de mineração.",
-    letra: 'B'
-  },
-  {
-    Questao: 'Segundo uma reportagem do jornal O Globo (nov. 2009), entre os meses de agosto de 2008 a julho de 2009 foram desmatados, na Amazônia, 7.008 km2 de floresta, de acordo com dados do Instituto Nacional de Pesquisas Espaciais. Apesar de esse número significar uma redução de 45% em relação ao ano anterior, o desmatamento ainda origina diversos prejuízos socioambientais à Floresta Amazônica, causando:',
-    respostas: [
-      { texto: 'A) Diminuição da fertilidade dos solos, comprometendo a potencialidade agrícola.', correto: true },
-      { texto: 'B) Diminuição da fauna, prejudicando as atividades turísticas.', correto: false },
-      { texto: 'C) Diminuição dos níveis fluviais, alterando os usos e as apropriações econômicas dos rios.', correto: false },
-    ], 
-    justificativa: "A) O desmatamento provoca, dentre outros problemas, a diminuição da fertilidade do solo, devido ao impacto direto na deterioração da qualidade do solo.",
-    letra: 'A'
-  },
-  {
-    Questao: 'Calcula-se que 78% do desmatamento na Amazônia tenha sido motivado pela pecuária – cerca de 35% do rebanho nacional está na região – e que pelo menos 50 milhões de hectares de pastos são pouco produtivos. Enquanto o custo médio para aumentar a produtividade de 1 hectare de pastagem é de 2 mil reais, o custo para derrubar igual área de floresta é estimado em 800 reais, o que estimula novos desmatamentos. Adicionalmente, madeireiras retiram as árvores de valor comercial que foram abatidas para a criação de pastagens. Os pecuaristas sabem que problemas ambientais como esses podem provocar restrições à pecuária nessas áreas, a exemplo do que ocorreu em 2006 com o plantio da soja, o qual, posteriormente, foi proibido em áreas de floresta. A partir da situação-problema descrita, conclui-se que:',
-    respostas: [
-      { texto: 'A) O desmatamento na Amazônia decorre principalmente da exploração ilegal de árvores de valor comercial.', correto: false },
-      { texto: 'B) Um dos problemas que os pecuaristas vêm enfrentando na Amazônia é a proibição do plantio de soja.', correto: false },
-      { texto: 'C) A recuperação de áreas desmatadas e o aumento de produtividade das pastagens podem contribuir para a redução do desmatamento na Amazônia.', correto: true },
-    ], 
-    justificativa: "C) Segundo o texto, há uma política contraditória, pois, há uma grande quantidade de pastos improdutivos e não utilizados no Brasil, enquanto os pecuaristas buscam a expansão de novas áreas para as suas atividades em áreas naturais através do desmatamento. Nesse sentido, uma medida de recuperação da Amazônia seria a realização de uma maior produtividade nas áreas hoje subutilizadas, além do reflorestamento das áreas desflorestadas.",
-    letra: 'C'
-  },
+    Questao: "O que é a pesca excessiva?",
+respostas: [
+ { texto: "A) Captura de peixes apenas para consumo local.", correto: false },
+ { texto: "B) Captura de peixes em quantidade superior à capacidade de reprodução.", correto: true},
+ { texto: "C) Captura de peixes dentro das cotas estabelecidas.", correto: false}
+],
+justificativa: " B) : A pesca excessiva ocorre quando os peixes são capturados em quantidades que excedem sua capacidade de se reproduzir e se recuperar.",
+letra:'b',
+},
+
+       
+{Questao: "Qual é o nome do tratado internacional que visa a conservação da biodiversidade?",
+respostas: [
+ { texto: "A)  Convenção sobre Diversidade Biológica (CDB).", correto: true },
+ { texto: "B) Tratado de Tóquio.", correto: false},
+ { texto: "C) Tratado de Paris.", correto: false}
+],
+justificativa: " A) : A Convenção sobre Diversidade Biológica é um tratado internacional que visa à conservação da biodiversidade.",
+letra:'a',
+},
+
 ]
 
 

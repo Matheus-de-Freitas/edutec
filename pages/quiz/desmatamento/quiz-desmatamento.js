@@ -287,6 +287,4 @@ const questao = [
   },
 ]
 
-
-
 ComecarJogo()

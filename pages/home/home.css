@@ -58,9 +58,9 @@
 .icones-contato i {
     height: 2.813rem;
     width: 2.813rem;
-    background-color: #31762D;
+    background-color: var(--form-botao);
     color: #fff;
-    font-size: 22px;
+    font-size: 1.375rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -70,8 +70,8 @@
 
 .icones-contato i:hover {
     background-color: #fff;
-    color:#31762D ;
-    border: solid 1px #31762d;
+    color:var(--form-botao) ;
+    border: solid 1px var(--form-botao);
 }
 
 /* .quiz{
@@ -100,7 +100,7 @@
 }
 
 .inicial-quiz-desmatamento h2{
-    color:var(--h1-desmatamento)
+    color:var(--h1-home-quiz-desmatamento)
 }
 
 #esquerda,
@@ -387,22 +387,22 @@
 form button {
     display: inline-block;
     font-size: 1rem;
-    background-color: #31762D;
+    background-color: var(--form-botao);
     color: #fff;
     width: 11rem;
     transition: all .45s ease;
-    height: 60px;
+    height: 3.75rem;
     border: none;
     border-radius: 10px;
 
 }
 
 .error {
-    color: #BD1B1B;
+    color: var(--background-errado);
     margin-left: 3rem;
 }
 .success {
-    color: #50CF59;
+    color: var(--background-correto);
     margin-left: 3rem;
     font-size: 2rem;
 }
@@ -423,23 +423,23 @@ form button {
 }
 
 .contact-icons i {
-    height: 45px;
-    width: 45px;
-    background-color: #31762D;
+    height: 2.813rem;
+    width: 2.813rem;
+    background-color: var(--form-botao);
     color: #fff;
-    font-size: 22px;
+    font-size: 1.375rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 1rem;
     transition: all .45s ease;
 }
 
 .contact-icons i:hover {
     background-color: #fff;
-    color:#31762D ;
-    border: solid 1px #31762d;
+    color:var(--form-botao) ;
+    border: solid 1px var(--form-botao);
 }
 
 .texto-contato span{
@@ -651,7 +651,7 @@ form button {
     cursor: pointer;
     transition: all 0.4s;
     font-size: 1.7rem;
-    margin-top: -5px;
+    margin-top: -0.313rem;
 }
 
 .btn-lr:hover{
@@ -801,5 +801,5 @@ form button {
     border-radius: 0.5rem;
     font-size: 0.938rem;
     color: #C6FFC1;
-    background: #31762D;
+    background: var(--form-botao);
   }

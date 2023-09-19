@@ -156,142 +156,158 @@ function fimJogo(){
 const questao = [
 
   {
-    Questao: '(Enem 2019) "O efeito estufa não é fenômeno recente e, muito menos, naturalmente maléfico. Alguns dos gases que o provocam funcionam como uma capa protetora que impede a dispersão total do calor e garante o equilíbrio da temperatura na Terra. Cientistas americanos da Universidade da Virgínia alegam ter descoberto um dos primeiros registros da ação humana sobre o efeito estufa. Há oito mil anos, houve uma súbita elevação da quantidade de CO2 na atmosfera terrestre. Nesse mesmo período, agricultores da Europa e da China já dominavam o fogo e haviam domesticado cães e ovelhas. A atividade humana da época com maior impacto sobre a organização social e sobre o ambiente foi o começo do plantio de trigo, cevada, ervilha e outros vegetais. Esse plantio passou a exigir áreas de terreno livre de sua vegetação original, providenciadas pelos inúmeros grupos humanos nessas regiões com métodos elementares de preparo do solo, ainda hoje, usados e condenados, em razão dos problemas ambientais decorrentes" (Aquecimento global e a nova geografia de produção no Brasil). Segundo a hipótese levantada pela pesquisa sobre as primeiras atividades humanas organizadas, o impacto ambiental mencionado foi decorrente:' ,
+    Questao: '(Enem 2019) "O efeito estufa não é fenômeno recente e, muito menos, naturalmente maléfico. Alguns dos gases que o provocam funcionam como uma capa protetora que impede a dispersão total do calor e garante o equilíbrio da temperatura na Terra. Cientistas americanos da Universidade da Virgínia alegam ter descoberto um dos primeiros registros da ação humana sobre o efeito estufa. Há oito mil anos, houve uma súbita elevação da quantidade de CO2 na atmosfera terrestre. Nesse mesmo período, agricultores da Europa e da China já dominavam o fogo e haviam domesticado cães e ovelhas. A atividade humana da época com maior impacto sobre a organização social e sobre o ambiente foi o começo do plantio de trigo, cevada, ervilha e outros vegetais. Esse plantio passou a exigir áreas de terreno livre de sua vegetação original, providenciadas pelos inúmeros grupos humanos nessas regiões com métodos elementares de preparo do solo, ainda hoje, usados e condenados, em razão dos problemas ambientais decorrentes". Segundo a hipótese levantada pela pesquisa sobre as primeiras atividades humanas organizadas, o impacto ambiental mencionado foi decorrente:' ,
 
     respostas: [
       
-      { texto: "A) da manipulação de alimentos cujo cozimento e consumo liberavam grandes quantidades de calor e gás carbônico. . ", correto: false },
+      { texto: "A) da manipulação de alimentos cujo cozimento e consumo liberavam grandes quantidades de calor e gás carbônico.", correto: false },
 
       { texto: "B) da queima ou da deterioração das árvores derrubadas para o plantio, que contribuíram para a liberação de gás carbônico e poluentes em proporções significativas.", correto: true},
 
       { texto: "C) do início da domesticação de animais no período mencionado, a qual contribuiu para uma forte elevação das emissões de gás metano.", correto: false}
     ],
 
-    justificativa: " A queima de vegetação, até hoje, é um dos principais motivos de aceleração do aquecimento global. Por isso, o desmatamento, seguido de queimada, é uma prática que deve ser combatida nos dias atuais..",
+    justificativa: " A queima de vegetação, até hoje, é um dos principais motivos de aceleração do aquecimento global. Por isso, o desmatamento, seguido de queimada, é uma prática que deve ser combatida nos dias atuais.",
     letra:'b',
+
   },
+  
   {
-    Questao: "Indique um fenômeno geomorfológico que é diretamente aumentado pelo desmatamento:",
+    Questao: '(Enem 2014) "O uso intenso das águas subterrâneas sem planejamento tem causado sérios prejuízos à sociedade, ao usuário e ao meio ambiente. Em várias partes do mundo, percebe-se que a exploração de forma incorreta tem levado a perdas do próprio aquífero" .(TEIXEIRA, W. et al. Decifrando a Terra. São Paulo: Cia. Editora Nacional, 2009 (adaptado). No texto, apontam-se dificuldades associadas ao uso de um importante recurso natural. Um problema derivado de sua utilização e uma respectiva causa para sua ocorrência são:' ,
+
     respostas: [
-      { texto: "A) Vulcanismo", correto: false },
-      { texto: "B) Erosão", correto: true },
-      { texto: "C) Sedimentação", correto: false },
+      
+      { texto: "A) Contaminação do aquífero — Contenção imprópria do ingresso direto de água superficial. ", correto: true },
+
+      { texto: "B) Intrusão salina — Extração reduzida da água doce do subsolo.", correto: false},
+
+      {texto:  "C) Superexploração de poços — Construção ineficaz de captações subsuperficiais.", correto: false}
     ],
-    justificativa: "B) A erosão é diretamente aumentada pelo desmatamento, visto que o solo sem vegetação natural fica muito mais suscetível aos processos erosivos.",
-    letra: 'B'
+
+    justificativa: "A contaminação de água subterrânea ocorre em função da poluição das águas na superfície. Uso de produtos químicos em lavouras, deposição inapropriada de lixo e ausência de tratamento de esgoto são fatores que contribuem significativamente para esse problema.",
+    letra:'A',
+
   },
-  {
-    Questao: 'Qual impacto provocado pelo desmatamento está fortemente ligado à fauna e à flora de uma região?',
+
+    {Questao: '(Enem 2019) "A pegada ecológica gigante que estamos a deixar no planeta está a transformá-lo de tal forma que os especialistas consideram que já entramos numa nova época geológica, o Antropoceno. E muitos defendem que, se não travarmos a crise ambiental, mais rapidamente transformaremos a Terra em Vênus do que iremos a Marte. A expressão “Antropoceno” é atribuída ao químico e prêmio Nobel Paul Crutzen, que a propôs durante uma conferência em 2000, ao mesmo tempo que anunciou o fim do Holoceno — a época geológica em que os seres humanos se encontram há cerca de 12 mil anos, segundo a União Internacional das Ciências Geológicas (UICG), a entidade que define as unidades de tempo geológicas." (SILVA, R. D. Antropoceno: e se formos os últimos seres vivos a alterar a Terra? (adaptado).A concepção apresentada considera a existência de uma nova época geológica concebida a partir da capacidade de influência humana nos processos' ,
+
     respostas: [
-      { texto: 'A) Diminuição da biodiversidade', correto: true },
-      { texto: 'B) Elevação do nível dos oceanos', correto: false },
-      { texto: 'C) Contaminação do nível freático', correto: false },
+      
+      { texto: "A) eruptivos. ", correto: false },
+
+      { texto: "B) exógenos.", correto:  true},
+
+      {texto:  "C) tectônicos.", correto: false}
     ],
-    justificativa: "A) O desmatamento provoca a perda do habitat de espécies de fauna e flora locais e contribui diretamente para a diminuição da biodiversidade de uma região.",
-    letra: 'A'
+
+    justificativa: "Processos exógenos são os processos que ocorrem na superfície do planeta Terra. A partir da primeira Revolução Industrial, a capacidade humana de alterar a superfície do planeta tornou-se imensa e nociva.",
+    letra:'B',
+
   },
-  {
-    Questao: "A remoção da vegetação, causada pelo desmatamento, implica na... ",
+
+{Questao: '(Enem 2018) "Quer um conselho? Vá conhecer alguma coisa da terra e deixe os homens em paz... Os homens mudam, a terra é inalterável. Vá por aí dentro, embrenhe-se pelo interior e observe alguma coisa de proveitoso. Aqui na capital só encontrará casas mais altas, ruas mais cheias e coisas parecidas ao que de igual existe em todas as cidades modernas. Mas ao contato com a terra você sentirá o que não pode sentir nas avenidas asfaltadas." (LOBATO, M. Lobatiana: meio ambiente. São Paulo: Brasiliense, 1985). O texto literário evidencia uma percepção dual sobre a cidade e o campo, fundamentada na ideia de' ,
+
     respostas: [
-      { texto: "A) Manutenção do equilíbrio ambiental.", correto: false },
-      { texto: "B) Redução da infiltração da água no solo.", correto: true },
-      { texto: "C) Conservação das nascentes de água", correto: false }
+      
+      { texto: "A) progresso científico. ", correto: false },
+
+      { texto: "B) evolução da sociedade.", correto:  false},
+
+      {texto:  "C) valorização da natureza.", correto: true}
     ],
-    justificativa: "B) Por meio do desmatamento, a capacidade de infiltração de água no solo fica comprometida, reduzindo assim a quantidade de água armazenada nos aquíferos.",
-    letra: 'B'
+
+    justificativa: "Percebe-se que o autor considera o afastamento geográfico da cidade como algo positivo, “proveitoso”. Revela uma valorização aos elementos naturais.",
+    letra:'C',
+
   },
-  {
-    Questao: "Uma das causas do desmatamento na Mata Atlântica é a...",
+{Questao: '(Enem 2015) "A questão ambiental, uma das principais pautas contemporâneas, possibilitou o surgimento de concepções políticas diversas, dentre as quais se destaca a preservação ambiental, que sugere uma ideia de intocabilidade da natureza e impede o seu aproveitamento econômico sob qualquer justificativa."(PORTO-GONÇALVES, C. W. A globalização da natureza e a natureza da globalização. Rio de Janeiro: Civilização Brasileira, 2006 (adaptado). Considerando as atuais concepções políticas sobre a questão ambiental, a dinâmica caracterizada no texto quanto à proteção do meio ambiente está baseada na' ,
+
     respostas: [
-      { texto: "A) Expansão da urbanização", correto: true },
-      { texto: "B) Cultivação de cereais", correto: false },
-      { texto: "C) Construção de hidrelétricas", correto: false },
+      
+      { texto: "A) proibição permanente da exploração da natureza.", correto: true },
+
+      { texto: "B) contenção de impactos ambientais.", correto:  false},
+
+      {texto:  "C) utilização progressiva dos recursos naturais.", correto: false}
     ],
-    justificativa: "A) A Mata Atlântica, bioma presente especialmente na porção centro-sul brasileira, foi duramente atingida pelo avanço da urbanização do país, marcado pelo crescimento desordenado das cidades.",
-    letra: 'A'
+
+    justificativa: "A política de preservação ambiental baseia-se no princípio da não utilização de recursos naturais como forma de se evitar problemas. Essa política diverge da conservação ambiental, que prega a utilização dos recursos, mas de forma sustentável, garantindo a existência dos mesmos às gerações futuras e a não ocorrência de problemas ambientais.",
+    letra:'A',
   },
-  {
-    Questao: 'No Brasil, o crescimento dos índices de desmatamento está fortemente ligado à:',
+
+  {Questao: '(Enem 2014) "A principal forma de relação entre o homem e a natureza, ou melhor, entre o homem e o meio, é dada pela técnica — um conjunto de meios instrumentais e sociais, com os quais o homem realiza sua vida, produz e, ao mesmo tempo, cria espaço."(SANTOS, M. A natureza do espaço. São Paulo: Edusp, 2002 (adaptado)." A relação estabelecida no texto, associada a uma profunda degradação ambiental, é verificada na' ,
+
     respostas: [
-      { texto: 'A) Construção de usinas nucleares.', correto: false },
-      { texto: 'B) Exploração de bacias sedimentares', correto: false },
-      { texto: 'C) Promoção de atividades agropecuárias', correto: true },
+      
+      { texto: "A) apropriação de reservas extrativistas para atender à demanda de subsistência.", correto: false },
+
+      { texto: "B) retirada da cobertura vegetal com o intuito de desenvolver a agricultura intensiva.", correto:  true},
+
+      {texto:  "C) ampliação da produção de alimentos orgânicos para minimizar problemas da fome.", correto: false}
     ],
-    justificativa: "C) O desmatamento no Brasil está fortemente vinculado às atividades agropecuárias. Atividades como a plantação de grãos e a criação de animais são comumente apontadas como grandes causadoras do desmatamento no país.",
-    letra: 'C'
+
+    justificativa: "O desenvolvimento da agricultura intensiva, fruto do avanço das técnicas, é marcado pela elevação da ocorrência dos problemas ambientais, especialmente o desmatamento, queimadas, empobrecimento dos solos e uso permanente de grandes quantidades de água doce.",
+    letra:'B',
+
   },
-  {
-    Questao: "Qual das seguintes opções é um exemplo de extinção em massa ocorrida no passado?",
+
+{Questao: '(Enem 2014) "A sustentabilidade é o maior desafio global. Por isso o desenvolvimento de um país, por mais exemplar que venha a ser, só poderá ser realmente sustentável quando a pegada ecológica mundial deixar de ultrapassar a capacidade de regeneração da biosfera. Não é diferente em termos setoriais. O setor agropecuário só será sustentável se também o forem o industrial, o terciário e a mineração. (VEIGA, J. E. O futuro da comida. Globo Rural, n. 312, out. 2011.) De acordo com o texto, a busca da sustentabilidade ambiental envolve mudança de hábitos, para que o desenvolvimento seja pautado no(a)' ,
+
     respostas: [
-      { texto: "A) Amazônia.", correto: true },
-      { texto: "B) Caatinga.", correto: false },
-      { texto: "C) Cocais.", correto: false }
+      
+      { texto: "A) busca de alternativas tecnológicas visando reduzir a jornada de trabalho.", correto: false },
+
+      { texto: "B) trabalho cooperativo, com remuneração justa e distribuição igualitária de renda.", correto:  false},
+
+      {texto:  "C) satisfação das necessidades da geração atual, assim como as das gerações futuras.", correto: true}
     ],
-    justificativa: "A) A Amazônia é o bioma mais atingido pelo desmatamento no Brasil, principalmente por causa da expansão da fronteira agrícola brasileira, que atinge duramente a porção centro-sul desse bioma. ",
-    letra: 'A'
+    justificativa: "O conceito de desenvolvimento sustentável baseia-se no princípio expresso na alternativa C: usar os recursos da terra de forma que as necessidades atuais sejam sanadas, mas mantendo esses mesmos recursos para a utilização das gerações futuras.",
+    letra:'C',
   },
-  {
-    Questao: "Uma medida para atenuar os processos de desmatamento no meio ambiente é a?",
+
+{Questao: '(Enem 2011) "Como os combustíveis energéticos, as tecnologias da informação são, hoje em dia, indispensáveis em todos os setores econômicos. Através delas, um maior número de produtores é capaz de inovar e a obsolescência de bens e serviços se acelera. Longe de estender a vida útil dos equipamentos e a sua capacidade de reparação, o ciclo de vida desses produtos diminui, resultando em maior necessidade de matéria-prima para a fabricação de novos." (GROSSARD, C. Le Monde Diplomatique Brasil. Ano 3, nº 36, 2010 (adaptado). A postura consumista de nossa sociedade indica a crescente produção de lixo, principalmente nas áreas urbanas, o que, associado a modos incorretos de deposição',
+
     respostas: [
-      { texto: "A) Remoção de árvores de grande porte.", correto: false },
-      { texto: "B) Reflorestação de regiões devastadas.", correto: true },
-      { texto: "C) Utilização de fontes não renováveis.", correto: false },
+      
+      { texto: "A) provoca a contaminação do solo e do lençol freático, ocasionando assim graves problemas socioambientais, que se adensarão com a continuidade da cultura do consumo desenfreado.", correto: true },
+
+      { texto: "B) produz efeitos perversos nos ecossistemas, que são sanados por cadeias de organismos decompositores que assumem o papel de eliminadores dos resíduos depositados em lixões.", correto:  false},
+
+      {texto:  "C) multiplica o número de lixões a céu aberto, considerados atualmente a ferramenta capaz de resolver de forma simplificada e barata o problema de deposição de resíduos nas grandes cidades.", correto: false}
     ],
-    justificativa: "B) Uma medida que busca solucionar os problemas resultantes do desmatamento é a recomposição da cobertura vegetal natural por meio de ações de reflorestamento.",
-    letra: 'B'
+    justificativa: "A produção de lixo é crescente na sociedade desde a primeira revolução industrial. O destino do lixo é problemático, uma vez que a utilização de lixões a céu aberto representa o modo predominante de descarte de materiais no Brasil.",
+    letra:'A',
   },
-  {
-    Questao: 'Parceiros comerciais do Brasil no exterior, principalmente os compradores de commodities produzidas na Amazônia, andam preocupados em evitar o que chamam de “desmatamento importado”, e têm exigido cada vez mais garantias de que os bens que compram são produzidos em conformidade com normas de respeito ao meio ambiente. A concepção de "desmatamento importado":',
+
+{Questao: '(Enem 2014) "Em 1872, Robert Angus Smith criou o termo “chuva ácida”, descrevendo precipitações ácidas em Manchester após a Revolução Industrial. Trata-se do acúmulo demasiado de dióxido de carbono e enxofre na atmosfera que, ao reagirem com compostos dessa camada, formam gotículas de chuva ácida e partículas de aerossóis. A chuva ácida não necessariamente ocorre no local poluidor, pois tais poluentes, ao serem lançados na atmosfera, são levados pelos ventos, podendo provocar a reação em regiões distantes. A água de forma pura apresenta pH 7 e, ao contatar agentes poluidores, reage, modificando seu pH para 5,6 e até menos que isso, o que provoca reações que deixam consequências. O texto aponta para um fenômeno atmosférico causador de graves problemas ao meio ambiente: a chuva ácida (pluviosidade com pH baixo). Esse fenômeno tem como consequência',
+
     respostas: [
-      { texto: 'A) Estende às economias globais a responsabilidade sobre mudanças planetárias.', correto: true },
-      { texto: 'B) Impede o crescimento econômico dos países do Terceiro Mundo.', correto: false },
-      { texto: 'C) Privilegia a qualidade de vida em prejuízo da produção de riqueza.', correto: false },
+      
+      { texto: "A) a corrosão de metais, pinturas, monumentos históricos, destruição da cobertura vegetal e acidificação dos lagos.", correto: true },
+
+      { texto: "B) a diminuição do aquecimento global, já que esse tipo de chuva retira poluentes da atmosfera.", correto:  false},
+
+      {texto:  "C) a destruição da fauna e da flora, e redução dos recursos hídricos, com o assoreamento dos rios.", correto: false}
     ],
-    justificativa: "A) O desmatamento importado ocorre por meio da compra de produtos que são provenientes de zonas geográficas que sofreram com a derrubada de árvores. Logo, é um conceito que remete à responsabilidade dos compradores pela origem dos produtos consumidos. ",
-    letra: 'A'
+    justificativa: "As chuvas ácidas aumentam na mesma proporção que a industrialização e utilização de veículos automotivos. É um problema ambiental de ordem global e pode ocorrer em regiões com muita ou pouca industrialização, em função do deslocamento dos ventos.",
+    letra:'A',
+
   },
-  {
-    Questao: 'A redução dos tamanhos das florestas naturais em todo o mundo tem ocorrido como resultado, principalmente, de incêndios, corte de árvores para propósitos comerciais, devastação de terras para utilização da agropecuária, ou até fenômenos naturais. (...) A persistência na ocorrência desses problemas torna relevante a manutenção de debates sobre as causas e os fatores relacionados ao desmatamento no Brasil, detentor da maior floresta mundial. Sobre o desmatamento no Brasil é CORRETO afirmar:',
+
+{Questao: '(Enem 2011) "A problemática ambiental surgiu nas últimas décadas do século XX como uma crise de civilização, questionando as racionalidades econômica e tecnológica dominantes. Com isso, novas organizações da sociedade civil despontaram, interessadas em um alternativo de relação sociedade e natureza. (MIGUEL, K. G. A expressão dos movimentos ambientais na atualidade: mídia, diversidade e igualdade.) Os movimentos sociais, em especial o movimento ambientalista, têm participado de forma decisiva na mudança de postura por parte das grandes empresas, principalmente no que diz respeito',
+
     respostas: [
-      { texto: 'A) O desmatamento é um processo inerente ao progresso, sem o qual o crescimento econômico é inviável.', correto: false },
-      { texto: 'B) A caatinga é o bioma brasileiro com menor percentual de área desmatada, devido, sobretudo, à aridez dos solos, o que inibe a agricultura.', correto: false },
-      { texto: 'C) Como consequência do desmatamento, acontece a diminuição da recarga dos aquíferos.', correto: true },
-    ], 
-    justificativa: "C) A diminuição da recarga dos aquíferos, por meio da dificuldade de entrada da água no subsolo, é uma consequência gerada pela remoção da vegetação nativa.",
-    letra: 'C'
+      
+      { texto: "A) ao sistema produtivo, que considera os custos ambientais, já que muitos recursos são retirados da natureza e apresentam um meio adequado de reposição..", correto: false },
+
+      { texto: "B) à observação dos direitos civis, que são conquistas do poder público e resultam na observação de toda a legislação ambiental existente nos países.", correto:  false},
+
+      {texto:  "C) à adoção de medidas sustentáveis, a fim de que essas empresas atuem com responsabilidade nos locais em que estão instaladas.", correto: true}
+    ],
+    justificativa: "A atuação de grupos ambientalistas reforça a importância da sustentabilidade junto às empresas e aos consumidores.",
+    letra:'C',
   },
-  {
-    Questao: 'O desmatamento atual na Amazônia cresceu em relação a 2015. Metade da área devastada fica no estado do Pará, atingindo áreas privadas ou de posse, sendo ainda registrados focos em unidades de conservação, assentamentos de reforma agrária e terras indígenas. Tal situação coloca em risco o compromisso firmado pelo Brasil na 21ª Conferência das Nações Unidas sobre Mudança Climática (COP 21), ocorrida em 2015. O desmatamento na Amazônia tem raízes históricas ligadas a processos que ocorrem desde 1970. Com base nos dados e em seus conhecimentos, aponte a afirmação correta.',
-    respostas: [
-      { texto: 'A) A extração ilegal de madeira na Amazônia vem sendo monitorada por países estrangeiros devido às exigências na COP 21, pois eles são os maiores beneficiários dos acordos da Conferência.', correto: false },
-      { texto: 'B) A grilagem de terras em regiões de grandes projetos de infraestrutura, a extração ilegal de madeira e a construção de rodovias estão entre as causas do desmatamento na Amazônia. ', correto: true },
-      { texto: 'C) Os grandes projetos de infraestrutura causam degradação da floresta amazônica, com intensidade moderada e temporária, auxiliando a regularização fundiária.', correto: false },
-    ], 
-    justificativa: "B) Os motivos do desmatamento da Amazônia estão fortemente vinculados a questões econômicas, a atividades ilegais, como grilagem de terras, projetos estruturais e atividades de mineração.",
-    letra: 'B'
-  },
-  {
-    Questao: 'Segundo uma reportagem do jornal O Globo (nov. 2009), entre os meses de agosto de 2008 a julho de 2009 foram desmatados, na Amazônia, 7.008 km2 de floresta, de acordo com dados do Instituto Nacional de Pesquisas Espaciais. Apesar de esse número significar uma redução de 45% em relação ao ano anterior, o desmatamento ainda origina diversos prejuízos socioambientais à Floresta Amazônica, causando:',
-    respostas: [
-      { texto: 'A) Diminuição da fertilidade dos solos, comprometendo a potencialidade agrícola.', correto: true },
-      { texto: 'B) Diminuição da fauna, prejudicando as atividades turísticas.', correto: false },
-      { texto: 'C) Diminuição dos níveis fluviais, alterando os usos e as apropriações econômicas dos rios.', correto: false },
-    ], 
-    justificativa: "A) O desmatamento provoca, dentre outros problemas, a diminuição da fertilidade do solo, devido ao impacto direto na deterioração da qualidade do solo.",
-    letra: 'A'
-  },
-  {
-    Questao: 'Calcula-se que 78% do desmatamento na Amazônia tenha sido motivado pela pecuária – cerca de 35% do rebanho nacional está na região – e que pelo menos 50 milhões de hectares de pastos são pouco produtivos. Enquanto o custo médio para aumentar a produtividade de 1 hectare de pastagem é de 2 mil reais, o custo para derrubar igual área de floresta é estimado em 800 reais, o que estimula novos desmatamentos. Adicionalmente, madeireiras retiram as árvores de valor comercial que foram abatidas para a criação de pastagens. Os pecuaristas sabem que problemas ambientais como esses podem provocar restrições à pecuária nessas áreas, a exemplo do que ocorreu em 2006 com o plantio da soja, o qual, posteriormente, foi proibido em áreas de floresta. A partir da situação-problema descrita, conclui-se que:',
-    respostas: [
-      { texto: 'A) O desmatamento na Amazônia decorre principalmente da exploração ilegal de árvores de valor comercial.', correto: false },
-      { texto: 'B) Um dos problemas que os pecuaristas vêm enfrentando na Amazônia é a proibição do plantio de soja.', correto: false },
-      { texto: 'C) A recuperação de áreas desmatadas e o aumento de produtividade das pastagens podem contribuir para a redução do desmatamento na Amazônia.', correto: true },
-    ], 
-    justificativa: "C) Segundo o texto, há uma política contraditória, pois, há uma grande quantidade de pastos improdutivos e não utilizados no Brasil, enquanto os pecuaristas buscam a expansão de novas áreas para as suas atividades em áreas naturais através do desmatamento. Nesse sentido, uma medida de recuperação da Amazônia seria a realização de uma maior produtividade nas áreas hoje subutilizadas, além do reflorestamento das áreas desflorestadas.",
-    letra: 'C'
-  },
+
 ]
-
-
 
 ComecarJogo()

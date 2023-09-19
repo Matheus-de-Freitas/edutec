@@ -98,7 +98,7 @@ function selecionarResposta(evento){
     gradeQuestoes.innerHTML += `
       <div class="numeros">${indexQuestaoAtual + 1})
         <div class="grade-respostas"> 
-          <p class="incorreto"><img src="../../../images/ilustrações/quiz/certo-errado/resp-certa-quiz.png" alt=""></p>
+          <p class="incorreto"><img src="../../../images/ilustrações/quiz/certo-errado/resp-errada-quiz.png" alt=""></p>
       </div>`
   }
 
@@ -154,137 +154,175 @@ function fimJogo(){
 
 // as questoes do quiz:
 const questao = [
-
   {
-    Questao: ' "Assinale a alternativa que NÃO apresenta uma causa do desmatamento:" ' ,
-    respostas: [
-      { texto: "A) Exploração de madeira.", correto: false },
-      { texto: "B) Produção de carvão.", correto: false },
-      { texto: "C) Conservação dos rios.", correto: true }
-    ],
-    justificativa: "C) O desmatamento possui várias causas, relacionadas com questões econômicas, políticas e sociais, mas não está vinculado à conservação dos cursos de água.",
-    letra: 'C',
+  Questao: "O efeito estufa é um fenômeno natural que é intensificado pela ação humana. Qual gás, lançado por meio das atividades antrópicas, está diretamente relacionado ao efeito estufa?",
+  respostas: [
+    { texto: "A) Gás carbônico.", correto: false },
+    { texto: "B) Nitrogênio.", correto: false},
+    { texto: "C) Dióxido de carbono .", correto: true}
+  ],
+  justificativa: " C) O dióxido de carbono é o principal gás responsável pelo efeito estufa. Ele é gerado por meio da queima de combustíveis fósseis assim como de madeira e restos vegetais.",
+  letra:'c',
+  
+},
+  {Questao: "O efeito estufa é uma das principais preocupações ambientais da humanidade, uma vez que os seus efeitos causam prejuízos para a biodiversidade e para as atividades humanas. Esse fenômeno tem como uma de suas consequências o:",
+  respostas: [
+    { texto: "A) processo de formação de vulcões.", correto: false },
+    { texto: "B) aumento da temperatura terrestre.", correto: true },
+    { texto: "C) desenvolvimento de tornados.", correto: false }
+  ],
+  justificativa: " B) O efeito estufa é um fenômeno natural que é potencializado pelas ações humanas. A sua principal consequência é o aumento da temperatura terrestre, que gera impactos como a redução da biodiversidade, o derretimento das calotas polares e o aumento do nível dos oceanos.",
+  letra:'b',
   },
+  
+  {Questao: "As atividades produtivas são importantes fatores que interferem diretamente na ocorrência do efeito estufa. No que toca à energia, pode-se afirmar que o efeito estufa está diretamente relacionado à produção energética por meio de:",
+  respostas: [
+    { texto: "A) combustíveis fósseis.", correto: true },
+    { texto: "B) produção de biomassa.", correto: false },
+    { texto: "C) instalações nucleares.", correto: false }
+  ],
+  justificativa: " A) Os combustíveis fósseis são os principais responsáveis pela emissão dos gases do efeito estufa. A queima de carvão mineral, petróleo e gás natural, por exemplo, emite gases poluentes que contribuem para o aumento da temperatura terrestre.",
+  letra:'a',
+  },
+  
+  {Questao: "Com base nas características do efeito estufa, escolha uma alternativa que indique corretamente uma provável consequência desse fenômeno no Brasil. ",
+  respostas: [
+    { texto: "A) Crescimento das queimadas, como no Pantanal.", correto: false },
+    { texto: "B) Inundações de cidades costeiras, como Santos", correto: true },
+    { texto: "C) Incidência de chuva ácida, em Cubatão.", correto: false }
+  ],
+  justificativa: " B) No Brasil, uma das prováveis causas do efeito estufa é o aumento do nível do oceano ao longo da costa do país. Dessa maneira, cidades como Santos (SP), que estão localizadas ao nível do mar, poderão ter grande parte da sua área alagada pelo mar.",
+  letra:'b',
+  },
+  
+  { Questao: "Na atualidade, novas tecnologias vêm possibilitando o desenvolvimento de ferramentas que podem contribuir para a diminuição do lançamento de gases do efeito estufa. Em relação aos transportes, uma ação relacionada à diminuição do efeito estufa expressa-se em:",
+  respostas: [
+    { texto: "A) Investimento em automóveis elétricos", correto: true },
+    { texto: "B)  Crescimento da frota de aeronaves.", correto: false },
+    { texto: "C) Aumento da cadeia produtiva de carros. ", correto: false }
+  ],
+  justificativa: " A)  Os carros elétricos, no que toca ao setor de transportes, são uma alternativa para a diminuição das emissões de gases do efeito estufa. A substituição de matrizes energéticas de combustíveis fósseis por matrizes renováveis é fundamental para a diminuição do efeito estufa.",
+  letra:'a',
+  
+  },
+  
   {
-    Questao: "Indique um fenômeno geomorfológico que é diretamente aumentado pelo desmatamento:",
-    respostas: [
-      { texto: "A) Vulcanismo", correto: false },
-      { texto: "B) Erosão", correto: true },
-      { texto: "C) Sedimentação", correto: false },
-    ],
-    justificativa: "B) A erosão é diretamente aumentada pelo desmatamento, visto que o solo sem vegetação natural fica muito mais suscetível aos processos erosivos.",
-    letra: 'B'
+          
+      Questao: "No que toca às atividades agropecuárias, assinale a alternativa que apresenta uma prática agrícola positiva para a diminuição dos processos que causam o efeito estufa:",
+  respostas: [
+   { texto: "A) Remoção da vegetação nativa nas áreas rurais..", correto: false },
+   { texto: "B) Criação de estufas artificiais para os cultivos.", correto: false},
+   { texto: "C) Aumento da presença de matéria orgânica no solo.", correto: true}
+  ],
+  justificativa: " C) O aumento de matéria orgânica no solo é de suma importância para a diminuição do efeito estufa, uma vez que ele promove o sequestro do carbono no solo e, ainda, diminui o fluxo de gases do efeito estufa para o meio ambiente.",
+  letra:'c',
   },
+  
   {
-    Questao: 'Qual impacto provocado pelo desmatamento está fortemente ligado à fauna e à flora de uma região?',
-    respostas: [
-      { texto: 'A) Diminuição da biodiversidade', correto: true },
-      { texto: 'B) Elevação do nível dos oceanos', correto: false },
-      { texto: 'C) Contaminação do nível freático', correto: false },
-    ],
-    justificativa: "A) O desmatamento provoca a perda do habitat de espécies de fauna e flora locais e contribui diretamente para a diminuição da biodiversidade de uma região.",
-    letra: 'A'
+          
+      Questao: "Com base nos seus conhecimentos sobre o efeito estufa, aponte uma prática que possibilita a diminuição da sua ocorrência:",
+  respostas: [
+   { texto: "A) Reflorestamento de regiões desmatadas.", correto: true },
+   { texto: "B) Investimento em pecuária extensiva.", correto: false},
+   { texto: "C) Queima dos resíduos orgânicos do lixo.", correto: false}
+  ],
+  justificativa: " A) As atividades de reflorestamento promovem o sequestro dos gases do efeito estufa que vão para a atmosfera, sendo assim de grande importância para a diminuição desses gases no meio, dessa forma, diminuindo a ação do efeito estufa ",
+  letra:'a',
   },
+  
+  
   {
-    Questao: "A remoção da vegetação, causada pelo desmatamento, implica na... ",
-    respostas: [
-      { texto: "A) Manutenção do equilíbrio ambiental.", correto: false },
-      { texto: "B) Redução da infiltração da água no solo.", correto: true },
-      { texto: "C) Conservação das nascentes de água", correto: false }
-    ],
-    justificativa: "B) Por meio do desmatamento, a capacidade de infiltração de água no solo fica comprometida, reduzindo assim a quantidade de água armazenada nos aquíferos.",
-    letra: 'B'
+          
+   Questao: "O Decreto Federal n. 7.390/2010, que regulamenta a Lei da Política Nacional sobre Mudança do Clima (PNMC) no Brasil, projeta que as emissões nacionais de gases de efeito estufa (GEE) em 2020 serão de 3,236 milhões. Esse mesmo decreto define o compromisso nacional voluntário do Brasil em reduzir as emissões de GEE projetadas para 2020 entre 38,6% e 38,9%. O cumprimento da meta mencionada está condicionado por",
+  
+  respostas: [
+   { texto: "A)  explorar reservas do pré-sal.", correto: false },
+   { texto: "B) investir em energias sustentáveis.", correto: true},
+   { texto: "C) utilizar gás de xisto betuminoso.", correto: false}
+  ],
+  justificativa: " B) : O investimento em fontes de energia renováveis promove a substituição dos combustíveis fósseis, principais contribuintes do efeito estufa, por matrizes como a solar e a eólica, que produzem energia limpa e sem emissão de poluentes na atmosfera.",
+  letra:'b',
   },
+  
   {
-    Questao: "Uma das causas do desmatamento na Mata Atlântica é a...",
-    respostas: [
-      { texto: "A) Expansão da urbanização", correto: true },
-      { texto: "B) Cultivação de cereais", correto: false },
-      { texto: "C) Construção de hidrelétricas", correto: false },
-    ],
-    justificativa: "A) A Mata Atlântica, bioma presente especialmente na porção centro-sul brasileira, foi duramente atingida pelo avanço da urbanização do país, marcado pelo crescimento desordenado das cidades.",
-    letra: 'A'
+  Questao: "Segundo a Conferência de Quioto, os países centrais industrializados, responsáveis históricos pela poluição, deveriam alcançar a meta de redução de 5,2% do total de emissões segundo níveis de 1990. O nó da questão é o enorme custo desse processo, demandando mudanças radicais nas indústrias para que se adaptem rapidamente aos limites de emissão estabelecidos e adotem tecnologias energéticas limpas. A comercialização internacional de créditos de sequestro ou de redução de gases causadores do efeito estufa foi a solução encontrada para reduzir o custo global do processo. Países ou empresas que conseguirem reduzir as emissões abaixo de suas metas poderão vender este crédito para outro país ou empresa que não consiga. As posições contrárias à estratégia de compensação presente no texto relacionam-se à ideia de que ela promove:"
+   ,
+  
+  respostas: [
+   { texto: "A) desigualdade na distribuição do impacto ecológico.", correto: true },
+   { texto: "B) decréscimo dos índices de desenvolvimento econômico.", correto: false},
+   { texto: "C) surgimento de conflitos de caráter diplomático.", correto: false}
+  ],
+  justificativa: " A) : As principais críticas envolvidas no texto da questão estão relacionadas à desigualdade na ação e na distribuição das fontes poluidoras, uma vez que o texto defende que as empresas poluam via compra de créditos de carbono de outras regiões para continuar com seus processos, que, por sua vez, geram impacto ambiental.",
+  letra:'a',
   },
+  
+         
   {
-    Questao: 'No Brasil, o crescimento dos índices de desmatamento está fortemente ligado à:',
-    respostas: [
-      { texto: 'A) Construção de usinas nucleares.', correto: false },
-      { texto: 'B) Exploração de bacias sedimentares', correto: false },
-      { texto: 'C) Promoção de atividades agropecuárias', correto: true },
-    ],
-    justificativa: "C) O desmatamento no Brasil está fortemente vinculado às atividades agropecuárias. Atividades como a plantação de grãos e a criação de animais são comumente apontadas como grandes causadoras do desmatamento no país.",
-    letra: 'C'
+      Questao: "Em estudos de Geografia Física, um dos fenômenos climáticos que possui destaque é o efeito estufa, caracterizado como",
+  
+     
+  respostas: [
+   { texto: "A) um fenômeno antrópico intensificado pela urbanização e industrialização mundial, que absorve poluentes como o metano e os clorofluorcarbonetos.", correto: false },
+  
+   { texto: "B) um fenômeno natural que retém parte do calor irradiado pela superfície terrestre e partículas de gases e de água em suspensão.", correto: false},
+  
+   { texto: "C) um fenômeno antrópico originado pela combinação de gás carbônico e água na atmosfera, capaz de causar danos em coberturas vegetais durante as precipitações.", correto: true}
+  ],
+  justificativa: " C) : O efeito estufa é de fato um fenômeno natural, caracterizado pela retenção de parte da emissão de calor proveniente da superfície terrestre. Contudo, esse fenômeno é potencializado pelas ações humanas, com destaque para as emissões de combustíveis fósseis e a queima de elementos orgânicos.",
+  letra:'c',
   },
+  
+  
+  
+  
+         
   {
-    Questao: "Qual das seguintes opções é um exemplo de extinção em massa ocorrida no passado?",
-    respostas: [
-      { texto: "A) Amazônia.", correto: true },
-      { texto: "B) Caatinga.", correto: false },
-      { texto: "C) Cocais.", correto: false }
-    ],
-    justificativa: "A) A Amazônia é o bioma mais atingido pelo desmatamento no Brasil, principalmente por causa da expansão da fronteira agrícola brasileira, que atinge duramente a porção centro-sul desse bioma. ",
-    letra: 'A'
+      Questao: "Ninguém duvida que o problema essencial da mudança climática seja o aquecimento provocado pelo efeito estufa. Nem que sejam gases como vapor d’água, dióxido de carbono ou metano os principais causadores do aumento da temperatura ambiente. Uma função que é, aliás, positiva. Se não ocorresse, a humanidade nem sequer existiria, pois a temperatura média do planeta seria 33 graus inferior à que temos. Um dos principais problemas desencadeados pelo efeito estufa diz respeito",
+  
+  respostas: [
+   { texto: "A) A extração ilegal de madeira na Amazônia vem sendo monitorada por países estrangeiros devido às exigências na COP 21, pois eles são os maiores beneficiários dos acordos da Conferência.", correto: false },
+  
+   { texto: "B) à revisão das unidades climáticas que o aquecimento terrestre fomenta.", correto: true},
+  
+   { texto: "C) ao aquecimento espacialmente desigual que ele traz à superfície terrestre.", correto: false}
+  ],
+  justificativa: " B): O aumento das temperaturas registradas na superfície terrestre é o principal problema desencadeado pelo efeito estufa. Tal cenário resulta em prejuízos ambientais e econômicos assim como na potencialização de desastres naturais.",
+  letra:'b',
   },
-  {
-    Questao: "Uma medida para atenuar os processos de desmatamento no meio ambiente é a?",
-    respostas: [
-      { texto: "A) Remoção de árvores de grande porte.", correto: false },
-      { texto: "B) Reflorestação de regiões devastadas.", correto: true },
-      { texto: "C) Utilização de fontes não renováveis.", correto: false },
-    ],
-    justificativa: "B) Uma medida que busca solucionar os problemas resultantes do desmatamento é a recomposição da cobertura vegetal natural por meio de ações de reflorestamento.",
-    letra: 'B'
+  
+  
+  
+         
+  {Questao: "O Sol emite luz para o planeta Terra. A luminosidade é transformada em calor na superfície terrestre. Uma parte desse calor é absorvida pela superfície terrestre e pelos oceanos, outra parte é devolvida ao espaço. A parcela de calor que fica retida pela atmosfera terrestre decorre da presença de gases específicos. Esse fenômeno que consiste na retenção de parte do calor junto à superfície terrestre é denominado:",
+  respostas: [
+   { texto: "A) efeito estufa", correto: true },
+   { texto: "B) ilha de calor.", correto: false},
+   { texto: "C) camada de ozônio.", correto: false}
+  ],
+  justificativa: " A) : O efeito estufa é o fenômeno natural do planeta Terra que garante a temperatura média da Terra. Os gases atmosféricos que produzem esse fenômeno são chamados de gases de efeito estufa.",
+  letra:'a',
+  }, 
+  
+  
+  
+  
+  
+         
+  {Questao: "O efeito estufa é o nome do fenômeno natural que garante a manutenção da temperatura média do planeta Terra em 14 ºC. Graças a ele, é possível o desenvolvimento da biodiversidade em nosso planeta. Os gases responsáveis pela ocorrência do efeito estufa são conhecidos como GEE — Gases de Efeito Estufa. Marque a alternativa que NÃO indica um dos gases de efeito estufa:",
+  respostas: [
+   { texto: "A) gás metano ", correto: false },
+   { texto: "B) óxido nitroso", correto: false},
+  
+   { texto: "C) sulfato ferroso", correto: true}
+  ],
+  justificativa: " C) : O sulfato ferroso não é um gás de efeito estufa. Os demais, em conjunto, são responsáveis pelo fenômeno do efeito estufa, que consiste em reter parte do calor produzido próximo à superfície terrestre.",
+  letra:'c',
   },
-  {
-    Questao: 'Parceiros comerciais do Brasil no exterior, principalmente os compradores de commodities produzidas na Amazônia, andam preocupados em evitar o que chamam de “desmatamento importado”, e têm exigido cada vez mais garantias de que os bens que compram são produzidos em conformidade com normas de respeito ao meio ambiente. A concepção de "desmatamento importado":',
-    respostas: [
-      { texto: 'A) Estende às economias globais a responsabilidade sobre mudanças planetárias.', correto: true },
-      { texto: 'B) Impede o crescimento econômico dos países do Terceiro Mundo.', correto: false },
-      { texto: 'C) Privilegia a qualidade de vida em prejuízo da produção de riqueza.', correto: false },
-    ],
-    justificativa: "A) O desmatamento importado ocorre por meio da compra de produtos que são provenientes de zonas geográficas que sofreram com a derrubada de árvores. Logo, é um conceito que remete à responsabilidade dos compradores pela origem dos produtos consumidos. ",
-    letra: 'A'
-  },
-  {
-    Questao: 'A redução dos tamanhos das florestas naturais em todo o mundo tem ocorrido como resultado, principalmente, de incêndios, corte de árvores para propósitos comerciais, devastação de terras para utilização da agropecuária, ou até fenômenos naturais. (...) A persistência na ocorrência desses problemas torna relevante a manutenção de debates sobre as causas e os fatores relacionados ao desmatamento no Brasil, detentor da maior floresta mundial. Sobre o desmatamento no Brasil é CORRETO afirmar:',
-    respostas: [
-      { texto: 'A) O desmatamento é um processo inerente ao progresso, sem o qual o crescimento econômico é inviável.', correto: false },
-      { texto: 'B) A caatinga é o bioma brasileiro com menor percentual de área desmatada, devido, sobretudo, à aridez dos solos, o que inibe a agricultura.', correto: false },
-      { texto: 'C) Como consequência do desmatamento, acontece a diminuição da recarga dos aquíferos.', correto: true },
-    ], 
-    justificativa: "C) A diminuição da recarga dos aquíferos, por meio da dificuldade de entrada da água no subsolo, é uma consequência gerada pela remoção da vegetação nativa.",
-    letra: 'C'
-  },
-  {
-    Questao: 'O desmatamento atual na Amazônia cresceu em relação a 2015. Metade da área devastada fica no estado do Pará, atingindo áreas privadas ou de posse, sendo ainda registrados focos em unidades de conservação, assentamentos de reforma agrária e terras indígenas. Tal situação coloca em risco o compromisso firmado pelo Brasil na 21ª Conferência das Nações Unidas sobre Mudança Climática (COP 21), ocorrida em 2015. O desmatamento na Amazônia tem raízes históricas ligadas a processos que ocorrem desde 1970. Com base nos dados e em seus conhecimentos, aponte a afirmação correta.',
-    respostas: [
-      { texto: 'A) A extração ilegal de madeira na Amazônia vem sendo monitorada por países estrangeiros devido às exigências na COP 21, pois eles são os maiores beneficiários dos acordos da Conferência.', correto: false },
-      { texto: 'B) A grilagem de terras em regiões de grandes projetos de infraestrutura, a extração ilegal de madeira e a construção de rodovias estão entre as causas do desmatamento na Amazônia. ', correto: true },
-      { texto: 'C) Os grandes projetos de infraestrutura causam degradação da floresta amazônica, com intensidade moderada e temporária, auxiliando a regularização fundiária.', correto: false },
-    ], 
-    justificativa: "B) Os motivos do desmatamento da Amazônia estão fortemente vinculados a questões econômicas, a atividades ilegais, como grilagem de terras, projetos estruturais e atividades de mineração.",
-    letra: 'B'
-  },
-  {
-    Questao: 'Segundo uma reportagem do jornal O Globo (nov. 2009), entre os meses de agosto de 2008 a julho de 2009 foram desmatados, na Amazônia, 7.008 km2 de floresta, de acordo com dados do Instituto Nacional de Pesquisas Espaciais. Apesar de esse número significar uma redução de 45% em relação ao ano anterior, o desmatamento ainda origina diversos prejuízos socioambientais à Floresta Amazônica, causando:',
-    respostas: [
-      { texto: 'A) Diminuição da fertilidade dos solos, comprometendo a potencialidade agrícola.', correto: true },
-      { texto: 'B) Diminuição da fauna, prejudicando as atividades turísticas.', correto: false },
-      { texto: 'C) Diminuição dos níveis fluviais, alterando os usos e as apropriações econômicas dos rios.', correto: false },
-    ], 
-    justificativa: "A) O desmatamento provoca, dentre outros problemas, a diminuição da fertilidade do solo, devido ao impacto direto na deterioração da qualidade do solo.",
-    letra: 'A'
-  },
-  {
-    Questao: 'Calcula-se que 78% do desmatamento na Amazônia tenha sido motivado pela pecuária – cerca de 35% do rebanho nacional está na região – e que pelo menos 50 milhões de hectares de pastos são pouco produtivos. Enquanto o custo médio para aumentar a produtividade de 1 hectare de pastagem é de 2 mil reais, o custo para derrubar igual área de floresta é estimado em 800 reais, o que estimula novos desmatamentos. Adicionalmente, madeireiras retiram as árvores de valor comercial que foram abatidas para a criação de pastagens. Os pecuaristas sabem que problemas ambientais como esses podem provocar restrições à pecuária nessas áreas, a exemplo do que ocorreu em 2006 com o plantio da soja, o qual, posteriormente, foi proibido em áreas de floresta. A partir da situação-problema descrita, conclui-se que:',
-    respostas: [
-      { texto: 'A) O desmatamento na Amazônia decorre principalmente da exploração ilegal de árvores de valor comercial.', correto: false },
-      { texto: 'B) Um dos problemas que os pecuaristas vêm enfrentando na Amazônia é a proibição do plantio de soja.', correto: false },
-      { texto: 'C) A recuperação de áreas desmatadas e o aumento de produtividade das pastagens podem contribuir para a redução do desmatamento na Amazônia.', correto: true },
-    ], 
-    justificativa: "C) Segundo o texto, há uma política contraditória, pois, há uma grande quantidade de pastos improdutivos e não utilizados no Brasil, enquanto os pecuaristas buscam a expansão de novas áreas para as suas atividades em áreas naturais através do desmatamento. Nesse sentido, uma medida de recuperação da Amazônia seria a realização de uma maior produtividade nas áreas hoje subutilizadas, além do reflorestamento das áreas desflorestadas.",
-    letra: 'C'
-  },
+  
+  
+  
+  
 ]
 
 

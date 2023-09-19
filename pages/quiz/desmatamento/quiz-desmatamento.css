@@ -47,12 +47,12 @@ body{
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 3rem;
-    color: #083912;
+    color: var(--h1-desmatamento);
     text-align: center;
 } 
 
 .caixa-quiz {
-    background-color: #D8ECD6;
+    background-color: var(--cor-background-desmatamento);
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -66,7 +66,7 @@ body{
     background-color: #fff;
     color: #000;
     display: block;
-    padding: 10px;
+    padding: 0.625rem;
     width: 42rem;
     border-radius: 5px;
     margin: 0.625rem;
@@ -90,7 +90,7 @@ body{
     text-transform: uppercase;
     border: none;
     color: #fff;
-    background-color: #0E8024;
+    background-color: var(--cor-botao-quiz-desmatamento);
     border-radius: 5px;
     margin-top: 3rem;
     width: 25rem;
@@ -151,18 +151,18 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    padding-left: 5px;
+    padding-left: 0.313rem;
     border-radius: 5px;
     font-weight: 500;
 }
 
 .grade-respostas p {
-    height: 30px;
-    width: 20px;
+    height: 1.875rem;
+    width: 1.25rem;
     padding-top: 3px;
     text-align: center;
     border-radius: 5px;
-    margin-left: 5px;
+    margin-left: 0.313rem;
 }
 
 
@@ -171,11 +171,11 @@ body{
     position: absolute;
     top: 70vh;
     right: 5vh;
-    background-color: #B7D2B5;
+    background-color: var(--background-explicacao-quiz-desmatamento);
     border-radius: 8px;
     max-width: 30rem;
     justify-content: flex-end;
-    color: #083912;
+    color: var(--h1-desmatamento);
     transition: all .5s ease;
     margin-top: auto;
 }
@@ -185,25 +185,25 @@ body{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    background-color: #0B4C18;
-    height: 70px;
+    background-color: var(--header-explicacao-quiz-desmatamento);
+    height: 4.375rem;
     border-radius: 8px;
 }
 
 .linhaq {
-    margin-top: 10px;
-    width: 150px;
-    border-bottom: 3px solid #82C27C;
+    margin-top: 0.625rem;
+    width: 9.375rem;
+    border-bottom: 3px solid var(--linha-explicacao-desmatamento);
 }
 
 #botaoLinhaq {
-    width: 100px;
-    margin-bottom: 30px;
+    width: 6.25rem;
+    margin-bottom: 1.875rem;
 }
 
 
 .explicacao-questao h3 {
-    padding: 20px;
+    padding: 1.25rem;
     font-size: 1.4rem;
 }
 
@@ -212,13 +212,13 @@ body{
 }
 
 .explicacao-texto {
-    padding: 0 20px ;
+    padding: 0 1.25rem ;
     font-weight: 500;
 }
 
 
 .questoes-corretas{
-    background-color: #50CF59;
+    background-color: var( --background-correto);
 }
   
 
@@ -241,7 +241,7 @@ body{
 
 .fim-conteudo {
     background-color: #fff;
-    width: 450px;
+    width: 28.125rem;
     border-radius: 5px;
     padding-bottom: 2rem;
 }
@@ -251,11 +251,11 @@ body{
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    margin: 30px;
+    margin: 1.875rem;
 }
 
 .fim-respostas a {
-    padding: 10px;
+    padding: 0.625rem;
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
@@ -283,7 +283,7 @@ body{
     justify-content: center;
     margin-top: 2rem;
     text-transform: uppercase;
-    color: #172B26;
+    color: var(--background-quiz-desmatamento-estufa);
     font-size: 1.5rem;
 }
 
@@ -300,19 +300,19 @@ button{
 }
 
 .fim-botoes button {
-    margin: 20px;
-    height: 65px;
-    width: 300px;
+    margin: 1.25rem;
+    height: 4rem;
+    width: 18.75rem;
     border-radius: 10px;
     border: none;
     font-weight: 600;
     font-size: 1.1rem;
-    background-color: #B9D7BE;
+    background-color: var(--background-botao-final-quiz-desmatamento);
     cursor: pointer;
 }
 
 #fora {
-    border: 3px solid #B9D7BE;
+    border: 3px solid var(--background-botao-final-quiz-desmatamento);
     background-color: transparent;
     
 }

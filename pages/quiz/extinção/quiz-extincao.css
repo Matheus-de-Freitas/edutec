@@ -67,7 +67,7 @@ body{
     background-color: #fff;
     color: #000;
     display: block;
-    padding: 10px;
+    padding: 0.625rem;
     width: 42rem;
     border-radius: 5px;
     margin: 0.625rem;
@@ -144,15 +144,15 @@ body{
 
 .numeros {
     background-color: #ccc;
-    height: 30px;
-    width: 45px;
+    height: 1.875rem;
+    width: 2.813rem;
     margin-bottom: .7rem;
     margin-left: .3rem ;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    padding-left: 5px;
+    padding-left: 0.313rem;
     border-radius: 5px;
     font-weight: 500;
 }
@@ -163,7 +163,7 @@ body{
     padding-top: 3px;
     text-align: center;
     border-radius: 5px;
-    margin-left: 5px;
+    margin-left: 0.313rem;
 }
 
 
@@ -187,24 +187,24 @@ body{
     justify-content: space-around;
     flex-direction: column;
     background-color: var(--header-explicacao-quiz-extincao);
-    height: 70px;
+    height: 4.375;
     border-radius: 8px;
 }
 
 .linhaq {
-    margin-top: 10px;
-    width: 150px;
+    margin-top: 0.625rem;
+    width: 9.375rem;
     border-bottom: 3px solid var(--linha-explicacao-extincao);
 }
 
 #botaoLinhaq {
-    width: 100px;
-    margin-bottom: 30px;
+    width: 6.25rem;
+    margin-bottom: 1.875rem;
 }
 
 
 .explicacao-questao h3 {
-    padding: 20px;
+    padding: 1.25rem;
     font-size: 1.4rem;
 }
 
@@ -213,13 +213,13 @@ body{
 }
 
 .explicacao-texto {
-    padding: 0 20px ;
+    padding: 0 1.25rem ;
     font-weight: 500;
 }
 
 
 .questoes-corretas{
-    background-color: #50CF59;
+    background-color: var(--background-correto);
 }
   
 
@@ -242,7 +242,7 @@ body{
 
 .fim-conteudo {
     background-color: #fff;
-    width: 450px;
+    width: 28.125rem;
     border-radius: 5px;
     padding-bottom: 2rem;
 }
@@ -252,11 +252,11 @@ body{
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    margin: 30px;
+    margin: 1.875rem;
 }
 
 .fim-respostas a {
-    padding: 10px;
+    padding: 0.625rem;
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
@@ -297,9 +297,9 @@ body{
 }
 
 .fim-botoes button {
-    margin: 20px;
-    height: 65px;
-    width: 300px;
+    margin: 1.25rem;
+    height: 4rem;
+    width: 18.75rem;
     border-radius: 10px;
     border: none;
     font-weight: 600;
