@@ -16,7 +16,7 @@ body{
 
 .caixaQuiz {
     background: url(../../../images/ilustrações/Ilustração-quiz-queimadas.svg)  right bottom no-repeat;
-    background-size: contain;
+    background-size: 50.375rem;
     background-position-y: 15vh;
     padding: 0;
     padding-top: 5rem;
